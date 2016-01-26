@@ -1,0 +1,4 @@
+C:\Archivos\Fuentes\GitHub\SisVac\Factory.Shared.Library\bin\Debug\Factory.Shared.Library.dll
+C:\Archivos\Fuentes\GitHub\SisVac\Factory.Shared.Library\bin\Debug\Factory.Shared.Library.pdb
+C:\Archivos\Fuentes\GitHub\SisVac\Factory.Shared.Library\obj\Debug\Factory.Shared.Library.dll
+C:\Archivos\Fuentes\GitHub\SisVac\Factory.Shared.Library\obj\Debug\Factory.Shared.Library.pdb

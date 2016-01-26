@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SodexoModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="SodexoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Aplicacion" EntityType="SodexoModel.Aplicacion" />
+    <EntitySet Name="Excepcion" EntityType="SodexoModel.Excepcion" />
+    <EntitySet Name="Excepcion_det" EntityType="SodexoModel.Excepcion_det" />
+    <EntitySet Name="Parametros" EntityType="SodexoModel.Parametros" />
+    <EntitySet Name="Perfil" EntityType="SodexoModel.Perfil" />
+    <EntitySet Name="Rol" EntityType="SodexoModel.Rol" />
+    <EntitySet Name="Usuario" EntityType="SodexoModel.Usuario" />
+    <EntitySet Name="Usuario_Rol" EntityType="SodexoModel.Usuario_Rol" />
+    <AssociationSet Name="R_6" Association="SodexoModel.R_6">
+      <End Role="Aplicacion" EntitySet="Aplicacion" />
+      <End Role="Rol" EntitySet="Rol" />
+    </AssociationSet>
+    <AssociationSet Name="R_1" Association="SodexoModel.R_1">
+      <End Role="Excepcion" EntitySet="Excepcion" />
+      <End Role="Excepcion_det" EntitySet="Excepcion_det" />
+    </AssociationSet>
+    <AssociationSet Name="R_11" Association="SodexoModel.R_11">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="Perfil" EntitySet="Perfil" />
+    </AssociationSet>
+    <AssociationSet Name="R_8" Association="SodexoModel.R_8">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="Usuario_Rol" EntitySet="Usuario_Rol" />
+    </AssociationSet>
+    <AssociationSet Name="R_7" Association="SodexoModel.R_7">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Usuario_Rol" EntitySet="Usuario_Rol" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Aplicacion">
+    <Key>
+      <PropertyRef Name="id_aplicacion" />
+    </Key>
+    <Property Name="id_aplicacion" Type="Int64" Nullable="false" />
+    <Property Name="nombre_sistema" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="nombre_corto" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="usuario_reg" Type="Int32" />
+    <Property Name="fecha_reg" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Rol" Relationship="SodexoModel.R_6" FromRole="Aplicacion" ToRole="Rol" />
+  </EntityType>
+  <EntityType Name="Excepcion">
+    <Key>
+      <PropertyRef Name="id_excepcion" />
+    </Key>
+    <Property Name="id_excepcion" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="anio" Type="String" MaxLength="4" Unicode="false" FixedLength="true" />
+    <Property Name="usu_reg" Type="Int32" />
+    <Property Name="usu_upd" Type="Int32" />
+    <Property Name="fecha_reg" Type="DateTime" Precision="3" />
+    <Property Name="fecha_upd" Type="DateTime" Precision="3" />
+    <Property Name="estado" Type="Int32" />
+    <NavigationProperty Name="Excepcion_det" Relationship="SodexoModel.R_1" FromRole="Excepcion" ToRole="Excepcion_det" />
+  </EntityType>
+  <EntityType Name="Excepcion_det">
+    <Key>
+      <PropertyRef Name="correlativo" />
+      <PropertyRef Name="id_excepcion" />
+    </Key>
+    <Property Name="correlativo" Type="Int32" Nullable="false" />
+    <Property Name="int_inf" Type="DateTime" Precision="3" />
+    <Property Name="int_sup" Type="DateTime" Precision="3" />
+    <Property Name="dia" Type="Int32" />
+    <Property Name="id_excepcion" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Excepcion" Relationship="SodexoModel.R_1" FromRole="Excepcion_det" ToRole="Excepcion" />
+  </EntityType>
+  <EntityType Name="Parametros">
+    <Key>
+      <PropertyRef Name="id_parametro" />
+    </Key>
+    <Property Name="id_parametro" Type="Int64" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="valor" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="id_padre" Type="Int64" />
+  </EntityType>
+  <EntityType Name="Perfil">
+    <Key>
+      <PropertyRef Name="id_perfil" />
+    </Key>
+    <Property Name="id_perfil" Type="Int64" Nullable="false" />
+    <Property Name="nombre_perfil" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="codigo_perfil" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="pagina" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="url" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="fecha_reg" Type="DateTime" Precision="3" />
+    <Property Name="usuario_reg" Type="Int32" />
+    <Property Name="id_rol" Type="Int64" />
+    <NavigationProperty Name="Rol" Relationship="SodexoModel.R_11" FromRole="Perfil" ToRole="Rol" />
+  </EntityType>
+  <EntityType Name="Rol">
+    <Key>
+      <PropertyRef Name="id_rol" />
+    </Key>
+    <Property Name="id_rol" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_rol" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="nombre_corto" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="estado" Type="Int32" />
+    <Property Name="id_aplicacion" Type="Int64" />
+    <NavigationProperty Name="Aplicacion" Relationship="SodexoModel.R_6" FromRole="Rol" ToRole="Aplicacion" />
+    <NavigationProperty Name="Perfil" Relationship="SodexoModel.R_11" FromRole="Rol" ToRole="Perfil" />
+    <NavigationProperty Name="Usuario_Rol" Relationship="SodexoModel.R_8" FromRole="Rol" ToRole="Usuario_Rol" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="Int64" Nullable="false" />
+    <Property Name="matricula" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="nombres" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="apellido_pat" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+    <Property Name="apellido_mat" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+    <Property Name="fecha_reg" Type="DateTime" Precision="3" />
+    <Property Name="usuario_reg" Type="Int32" />
+    <Property Name="estado" Type="Int32" />
+    <NavigationProperty Name="Usuario_Rol" Relationship="SodexoModel.R_7" FromRole="Usuario" ToRole="Usuario_Rol" />
+  </EntityType>
+  <EntityType Name="Usuario_Rol">
+    <Key>
+      <PropertyRef Name="id_relacion" />
+    </Key>
+    <Property Name="id_usuario" Type="Int64" />
+    <Property Name="id_rol" Type="Int64" />
+    <Property Name="id_relacion" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Rol" Relationship="SodexoModel.R_8" FromRole="Usuario_Rol" ToRole="Rol" />
+    <NavigationProperty Name="Usuario" Relationship="SodexoModel.R_7" FromRole="Usuario_Rol" ToRole="Usuario" />
+  </EntityType>
+  <Association Name="R_6">
+    <End Role="Aplicacion" Type="SodexoModel.Aplicacion" Multiplicity="0..1" />
+    <End Role="Rol" Type="SodexoModel.Rol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aplicacion">
+        <PropertyRef Name="id_aplicacion" />
+      </Principal>
+      <Dependent Role="Rol">
+        <PropertyRef Name="id_aplicacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_1">
+    <End Role="Excepcion" Type="SodexoModel.Excepcion" Multiplicity="1" />
+    <End Role="Excepcion_det" Type="SodexoModel.Excepcion_det" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Excepcion">
+        <PropertyRef Name="id_excepcion" />
+      </Principal>
+      <Dependent Role="Excepcion_det">
+        <PropertyRef Name="id_excepcion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_11">
+    <End Role="Rol" Type="SodexoModel.Rol" Multiplicity="0..1" />
+    <End Role="Perfil" Type="SodexoModel.Perfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="id_rol" />
+      </Principal>
+      <Dependent Role="Perfil">
+        <PropertyRef Name="id_rol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_8">
+    <End Role="Rol" Type="SodexoModel.Rol" Multiplicity="0..1" />
+    <End Role="Usuario_Rol" Type="SodexoModel.Usuario_Rol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="id_rol" />
+      </Principal>
+      <Dependent Role="Usuario_Rol">
+        <PropertyRef Name="id_rol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="R_7">
+    <End Role="Usuario" Type="SodexoModel.Usuario" Multiplicity="0..1" />
+    <End Role="Usuario_Rol" Type="SodexoModel.Usuario_Rol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="Usuario_Rol">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

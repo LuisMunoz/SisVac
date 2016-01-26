@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d1e3deff10cc429282f3edb29894abff" Name="Diagrama1">
+        <EntityTypeShape EntityType="SodexoModel.Aplicacion" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SodexoModel.Excepcion" Width="1.5" PointX="8.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="SodexoModel.Excepcion_det" Width="1.5" PointX="11" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SodexoModel.Parametros" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SodexoModel.Perfil" Width="1.5" PointX="5.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SodexoModel.Rol" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SodexoModel.Usuario" Width="1.5" PointX="6" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SodexoModel.Usuario_Rol" Width="1.5" PointX="8.25" PointY="3" IsExpanded="true" />
+        <AssociationConnector Association="SodexoModel.R_6" ManuallyRouted="false" />
+        <AssociationConnector Association="SodexoModel.R_1" ManuallyRouted="false" />
+        <AssociationConnector Association="SodexoModel.R_11" ManuallyRouted="false" />
+        <AssociationConnector Association="SodexoModel.R_8" ManuallyRouted="false" />
+        <AssociationConnector Association="SodexoModel.R_7" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

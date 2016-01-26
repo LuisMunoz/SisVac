@@ -1,0 +1,4 @@
+C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Core.SisVac\bin\Debug\Sodexo.Core.SisVac.dll
+C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Core.SisVac\bin\Debug\Sodexo.Core.SisVac.pdb
+C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Core.SisVac\obj\Debug\Sodexo.Core.SisVac.dll
+C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Core.SisVac\obj\Debug\Sodexo.Core.SisVac.pdb

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SodexoModelStoreContainer" CdmEntityContainer="SodexoEntities">
+    <EntitySetMapping Name="Aplicacion">
+      <EntityTypeMapping TypeName="SodexoModel.Aplicacion">
+        <MappingFragment StoreEntitySet="Aplicacion">
+          <ScalarProperty Name="id_aplicacion" ColumnName="id_aplicacion" />
+          <ScalarProperty Name="nombre_sistema" ColumnName="nombre_sistema" />
+          <ScalarProperty Name="nombre_corto" ColumnName="nombre_corto" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="usuario_reg" ColumnName="usuario_reg" />
+          <ScalarProperty Name="fecha_reg" ColumnName="fecha_reg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Excepcion">
+      <EntityTypeMapping TypeName="SodexoModel.Excepcion">
+        <MappingFragment StoreEntitySet="Excepcion">
+          <ScalarProperty Name="id_excepcion" ColumnName="id_excepcion" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+          <ScalarProperty Name="usu_reg" ColumnName="usu_reg" />
+          <ScalarProperty Name="usu_upd" ColumnName="usu_upd" />
+          <ScalarProperty Name="fecha_reg" ColumnName="fecha_reg" />
+          <ScalarProperty Name="fecha_upd" ColumnName="fecha_upd" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Excepcion_det">
+      <EntityTypeMapping TypeName="SodexoModel.Excepcion_det">
+        <MappingFragment StoreEntitySet="Excepcion_det">
+          <ScalarProperty Name="correlativo" ColumnName="correlativo" />
+          <ScalarProperty Name="int_inf" ColumnName="int_inf" />
+          <ScalarProperty Name="int_sup" ColumnName="int_sup" />
+          <ScalarProperty Name="dia" ColumnName="dia" />
+          <ScalarProperty Name="id_excepcion" ColumnName="id_excepcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parametros">
+      <EntityTypeMapping TypeName="SodexoModel.Parametros">
+        <MappingFragment StoreEntitySet="Parametros">
+          <ScalarProperty Name="id_parametro" ColumnName="id_parametro" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_padre" ColumnName="id_padre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Perfil">
+      <EntityTypeMapping TypeName="SodexoModel.Perfil">
+        <MappingFragment StoreEntitySet="Perfil">
+          <ScalarProperty Name="id_perfil" ColumnName="id_perfil" />
+          <ScalarProperty Name="nombre_perfil" ColumnName="nombre_perfil" />
+          <ScalarProperty Name="codigo_perfil" ColumnName="codigo_perfil" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="pagina" ColumnName="pagina" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="fecha_reg" ColumnName="fecha_reg" />
+          <ScalarProperty Name="usuario_reg" ColumnName="usuario_reg" />
+          <ScalarProperty Name="id_rol" ColumnName="id_rol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rol">
+      <EntityTypeMapping TypeName="SodexoModel.Rol">
+        <MappingFragment StoreEntitySet="Rol">
+          <ScalarProperty Name="id_rol" ColumnName="id_rol" />
+          <ScalarProperty Name="nombre_rol" ColumnName="nombre_rol" />
+          <ScalarProperty Name="nombre_corto" ColumnName="nombre_corto" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_aplicacion" ColumnName="id_aplicacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="SodexoModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="matricula" ColumnName="matricula" />
+          <ScalarProperty Name="nombres" ColumnName="nombres" />
+          <ScalarProperty Name="apellido_pat" ColumnName="apellido_pat" />
+          <ScalarProperty Name="apellido_mat" ColumnName="apellido_mat" />
+          <ScalarProperty Name="fecha_reg" ColumnName="fecha_reg" />
+          <ScalarProperty Name="usuario_reg" ColumnName="usuario_reg" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario_Rol">
+      <EntityTypeMapping TypeName="SodexoModel.Usuario_Rol">
+        <MappingFragment StoreEntitySet="Usuario_Rol">
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="id_rol" ColumnName="id_rol" />
+          <ScalarProperty Name="id_relacion" ColumnName="id_relacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,6 @@
+C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Wcf.SisVac\bin\Debug\Sodexo.Wcf.SisVac.dll.config
+C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Wcf.SisVac\bin\Debug\Sodexo.Wcf.SisVac.dll
+C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Wcf.SisVac\bin\Debug\Sodexo.Wcf.SisVac.pdb
+C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Wcf.SisVac\obj\Debug\Sodexo.Wcf.SisVac.csprojResolveAssemblyReference.cache
+C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Wcf.SisVac\obj\Debug\Sodexo.Wcf.SisVac.dll
+C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Wcf.SisVac\obj\Debug\Sodexo.Wcf.SisVac.pdb
