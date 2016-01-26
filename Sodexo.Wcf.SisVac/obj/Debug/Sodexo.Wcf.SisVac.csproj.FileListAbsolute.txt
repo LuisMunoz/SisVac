@@ -4,3 +4,9 @@ C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Wcf.SisVac\bin\Debug\Sodexo.Wcf.SisVac.
 C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Wcf.SisVac\obj\Debug\Sodexo.Wcf.SisVac.csprojResolveAssemblyReference.cache
 C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Wcf.SisVac\obj\Debug\Sodexo.Wcf.SisVac.dll
 C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Wcf.SisVac\obj\Debug\Sodexo.Wcf.SisVac.pdb
+C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Wcf.SisVac\bin\Debug\Sodexo.BL.SisVac.dll
+C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Wcf.SisVac\bin\Debug\Sodexo.DAL.SisVac.dll
+C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Wcf.SisVac\bin\Debug\EntityFramework.dll
+C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Wcf.SisVac\bin\Debug\Sodexo.BL.SisVac.pdb
+C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Wcf.SisVac\bin\Debug\Sodexo.DAL.SisVac.pdb
+C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.Wcf.SisVac\bin\Debug\EntityFramework.xml

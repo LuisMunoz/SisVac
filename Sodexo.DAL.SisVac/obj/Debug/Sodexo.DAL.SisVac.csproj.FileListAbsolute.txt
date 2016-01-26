@@ -1,4 +1,3 @@
-C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.DAL.SisVac\obj\Debug\Sodexo.DAL.SisVac.csprojResolveAssemblyReference.cache
 C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.DAL.SisVac\bin\Debug\Sodexo.DAL.SisVac.dll.config
 C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.DAL.SisVac\bin\Debug\Sodexo.DAL.SisVac.dll
 C:\Archivos\Fuentes\GitHub\SisVac\Sodexo.DAL.SisVac\bin\Debug\Sodexo.DAL.SisVac.pdb

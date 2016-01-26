@@ -44,12 +44,24 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AplicacionService.cs" />
+    <Compile Include="IAplicacion.cs" />
     <Compile Include="IService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sodexo.BL.SisVac\Sodexo.BL.SisVac.csproj">
+      <Project>{d2728c50-3976-4b85-bb9c-2647738f5229}</Project>
+      <Name>Sodexo.BL.SisVac</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sodexo.DAL.SisVac\Sodexo.DAL.SisVac.csproj">
+      <Project>{1f744e5b-2ec7-4cbf-b20c-1b17deb2c06f}</Project>
+      <Name>Sodexo.DAL.SisVac</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
