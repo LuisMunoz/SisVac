@@ -1,0 +1,35 @@
+﻿.overlay  
+        {
+    	    position: fixed;
+    	    z-index: 98;
+    	    top: 0px;
+    	    left: 0px;
+    	    right: 0px;
+    	    bottom: 0px;
+            background-color: #aaa; 
+            filter: alpha(opacity=90); 
+            opacity: 0.9; 
+        }
+
+        .overlayContent
+        {
+    	    /*z-index: 99;
+    	    margin: 250px auto;*/
+            z-index: 99;
+            position:absolute;
+    	    width: 80px;
+    	    height: 80px;
+            top:50px;
+            left:50px;
+        }
+        .overlayContent h2
+        {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+        }
+        .overlayContent img
+        {
+    	    width: 128px;
+    	    height: 128px;
+        }

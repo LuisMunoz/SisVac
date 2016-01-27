@@ -1,0 +1,185 @@
+﻿.TablaContenido{
+	width:100%;
+}
+
+.TablaFondoPrincipal{
+	width:100%;
+    background:url(../Imagenes/Portal/imgPrincipal.jpg);
+    background-repeat:no-repeat;
+    height: 546px;
+}
+
+.CeldaUsuarioPrincipal{
+    height: 200px;
+    text-align:left;
+    padding-left:110px;
+    color:#B7B9BC;
+}
+
+.TituloBienvenidaContenido{
+	/*background:url(../Imagenes/BackTituloContenido.gif);*/ 
+	/*height:31px;*/
+	text-align:left;
+	color:#ed1b2e;
+	font-family:Arial;
+	font-size:12px;
+	/*font-weight:bold;*/
+}
+
+.TituloBienvenidaContenidoTabla{
+	width:100%;
+}
+
+.BienvenidaContenido{
+	text-align:justify;
+	font-family:Arial;
+	font-size:16px;
+	width:465px;
+	padding-top:10px;
+	vertical-align:top;
+	color:#7a7879;
+}
+
+.BienvenidaImagenContenido{
+}
+
+.PieBienvenidaContenido{
+	background:url(../Imagenes/BackPieContenido.jpg); 
+	height:31px;
+}
+
+.CeldaCampo
+{
+	text-align:left;
+}
+
+.CeldaCampoCentro
+{
+	text-align:center;
+}
+
+.CeldaGrilla
+{
+	text-align:center;
+}
+
+.LabelCampo{
+	font-family:Arial;
+	font-size:12px;
+	color:#8e8e8e;
+    margin-left: 0px;
+}
+
+.LabelCampoCentrado{
+	font-family:Arial;
+	font-size:12px;
+	color:#8e8e8e;
+    margin-left: 25%;
+	width:100%;
+}
+
+.LabelCampoMensaje{
+	font-family:Arial;
+	font-size:14px;
+	color:#8e8e8e;
+    font-weight:bold;
+}
+
+.LabelCampoObligatorio{
+	font-family:Arial;
+	font-size:12px;
+	color:#ed1b2e;
+}
+
+.TablaCalculo
+{
+	background-color:#dededc;
+}
+
+.TablaCalculoTdCampo
+{
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	color:#615d5c;
+	padding-left:15px;
+	padding-right:15px;
+    text-align:left;
+}
+
+.TablaCalculoTdCalculo
+{
+	font-family:Arial;
+	font-size:12px;
+	/*font-weight:bold;*/
+	color:#585a5c;
+	/*background-color:#615d5c;*/
+    background:url(../Imagenes/TextBox/TextoCampoPrima100.png); 
+	padding-left:15px;
+	padding-right:5px;
+    width:80px;
+    height:18px;
+    text-align:right;
+}
+
+
+.CeldaPopupPreguntas
+{
+	font-family: Arial;
+	font-size: 12px;
+	color: #ed1b2e;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align:right;
+}
+.CeldaPopupPreguntas span:hover
+{
+    cursor:pointer;
+}
+
+.CeldaPopupPreguntasIzq
+{
+	font-family: Arial;
+	font-size: 12px;
+	color: #ed1b2e;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align:left;
+}
+.CeldaPopupPreguntasIzq span:hover
+{
+    cursor:pointer;
+}
+
+
+.text_ayuda_prg{
+	font-family:Arial;
+	font-size:12px;
+	color:#ed1b2e;
+    font-weight:bold;
+	text-align:justify;
+}
+
+.text_ayuda_rpt
+{
+	color:#8e8e8e;
+    font-family:Arial;
+	font-size:12px;
+	text-align:justify;
+}
+
+
+
+.CeldaCampoShow
+{
+	text-align:center;
+	width:60%;
+	height:70px;
+	display:none;
+	margin-bottom:20px;
+}
+
+.Row
+{
+	float:left;
+}

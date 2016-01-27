@@ -1,0 +1,329 @@
+﻿.TablaMaster {
+    width:1100px;
+	/*table-layout:fixed;*/
+}
+
+
+.CabeceraMaster {
+    /*background-color:#ED1B2E;*/
+    width:1100px;
+}
+
+.CabeceraMasterIzq
+{
+	height:110px;
+	width:8px;
+	background-image:url(../Imagenes/BordeIzq.jpg);
+	padding:0px;
+}
+
+.CabeceraMasterIzq
+{
+	height:110px;
+	width:8px;
+	background-image:url(../Imagenes/BordeIzq.jpg);
+	padding:0px;
+}
+
+.CabeceraMasterDer
+{
+	height:110px;
+	width:8px;
+	background-image:url(../Imagenes/BordeDer.jpg);
+	padding:0px;
+}
+
+.Logo {
+    width:215px;
+	background-color:#ed1b2e;
+	margin:0px;
+	padding:0px;
+}
+
+.Sesion {
+    text-align:right;
+	padding-right:15px;
+	padding-top:10px;
+    padding-left:10px;
+	vertical-align:top;
+	background-color:#ed1b2e;
+}
+
+.SesionTabla {
+    width:100%;
+}
+
+.SesionFechaHora {
+    color:#FFFFFF;
+	padding-right:7px;
+}
+
+.SesionLabel {
+    font-family:Arial; 
+	font-size:12px;
+}
+
+
+.SesionAplicacion {
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+    height: 40px;
+    width: 700px;
+    border-left: 1px;
+    border-left-style: solid;
+    border-left-color: #FFFFFF;
+    padding-left:10px;
+}
+
+.SesionFechaHora {
+    color:#FFFFFF; 
+	font-family:'DINRegular'; 
+	font-size:14px;
+}
+
+
+
+
+
+
+.BotonSesionCerrar {
+    border-radius:15px;
+    font-family:Segoe;
+    color:#797979;
+    background-image:url(../Imagenes/FondoBotonSesion.jpg);
+    border:none;
+    font-size:14px;
+    height:30px;
+    width:120px;
+}
+
+.BotonSesionInicio {
+    border-radius:15px;
+    font-family:Segoe;
+    color:#797979;
+    background-image:url(../Imagenes/FondoBotonSesion.jpg);
+    border:none;
+    font-size:14px;
+    height:30px;
+    width:80px;
+}
+
+.BotonSesionInicio {
+    border-radius:15px;
+    font-family:Segoe;
+    color:#797979;
+    background-image:url(../Imagenes/FondoBotonSesion.jpg);
+    border:none;
+    font-size:14px;
+    height:30px;
+    width:80px;
+}
+
+.BotonSesionMiCuenta {
+    border-radius:15px;
+    font-family:Segoe;
+    color:#797979;
+    background-image:url(../Imagenes/FondoBotonSesion.jpg);
+    border:none;
+    font-size:14px;
+    height:30px;
+    width:100px;
+}
+
+.MargenesLaterales {
+	 width:8px;
+}
+
+
+.CabeceraMenu {
+    width:190px;/*Es porque tiene un padding-left de 25 px y su tamaño total debe ser de 215 px*/
+	background-image:url(../Imagenes/imgFondoTituloMenu.png);
+	height:29px;/*Es porque tiene un padding-top de 2 px y su tamaño total debe ser de 31 px*/
+	/*color:#383737;*/
+    color:#FFFFFF;
+	padding:0 0 0 0; 
+	font-family:Arial; 
+	font-size:12px; 
+	line-height:30px;
+	text-align:left;
+	padding-top:2px;
+	padding-left:25px;
+    font-weight:bold;
+}
+
+.PieMenu {
+	background-image:url(../Imagenes/Menu/imgFondoPieMenu.png);
+	height:8px;
+}
+
+/*.CabeceraMenu:hover {
+    color:#FFFFFF;
+	background-image:url(../Imagenes/imgFondoTituloMenuHover.png);
+}*/
+
+.CabeceraMenu span{
+	background:url(../Imagenes/icon-more-menu.png) left no-repeat; 
+	padding:0 0 0 15px;
+}
+
+.ContenidoMenu{
+	vertical-align:top;
+	text-align:left;
+	padding:0px;
+}
+
+.ContenidoMenuPrincipal{
+	vertical-align:top;
+	text-align:left;
+	padding:0px;    
+    /*height:218px;*/
+    height:441px;
+}
+
+.ContenidoBanner{
+	background-image:url(../Imagenes/Portal/imgBanner.jpg);
+    height:231px;
+    background-repeat:no-repeat;
+}
+
+.ContenidoBannerPortal{
+	vertical-align:bottom;
+}
+
+.ContenidoTelefono{
+	background-image:url(../Imagenes/Portal/imgTelefono.jpg);
+    height:71px;
+    background-repeat:no-repeat;
+}
+
+.ContenidoTelefonoPortal{
+	vertical-align:bottom;
+}
+
+.ContenidoMenuCelda{
+	padding:0px;
+}
+
+.CabeceraContenido {
+    /*width:754px;*/
+	background-image:url(../Imagenes/imgFondoBarraMenu.png);
+	text-align:left;
+	padding:0px;
+	/*padding-bottom:0px;
+	padding-left:0px;*/
+}
+
+.CabeceraContenidoTitulo {
+    background-color:#ed1b2e;
+	text-align:left;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	color:#FFFFFF;
+	height:29px;
+	padding-top:1px;
+	padding-bottom:1px;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.CabeceraContenidoActual {
+    background:url(../Imagenes/imgFlechaTitulo.png) left no-repeat;
+	width:15px;
+}
+
+.MargenSuperior {
+	 height:5px;
+	 font-size:1px;
+}
+
+.Contenido {
+    padding-top:10px;
+	padding-left:10px;
+	vertical-align:top;
+}
+
+.ContenidoPrincipal {
+	padding-left:10px;
+	vertical-align:top;
+}
+
+/*.top-menu{
+	width:215px; 
+	height:31px; 
+	padding:0; 
+	margin:0; 
+	line-height:25px; 
+	float:left}
+
+.top-menu span
+	{color:#999; 
+	 background:url(images/icon-more-menu.png) left no-repeat; 
+	 padding:0 0 0 15px; 
+	 margin-left:8px; 
+	 font-family:'DINRegular'; 
+	 font-size:18px; line-height:30px;
+}*/
+
+.PieContenido{
+	/*background:url(../Imagenes/BackPieMaster.png);
+	height:30px;*/
+	padding:0px;
+}
+
+.PieContenidoIzq{
+	background:url(../Imagenes/Portal/imgPieBordeIzq.png);
+    width:8px;
+}
+
+.PieContenidoDer{
+	background:url(../Imagenes/Portal/imgPieBordeDer.png);
+    width:8px;
+}
+
+.PieContenidoTabla{
+	width:100%;
+}
+
+.PieContenidoTablaPopup{
+    text-align:center;
+	color:#B7B9BC;
+	font-family:Arial;
+	font-size:12px;
+    background-color:#585A5C;
+    text-align:center;
+    height:22px;
+	width:684px;/*Es 684px porque los borde izquierdo y derecho tienen 8px cada uno en total deberia ser 700px*/
+}
+
+.PieContenidoTablaAncho{
+    text-align:center;
+	color:#B7B9BC;
+	font-family:Arial;
+	font-size:12px;
+    background-color:#585A5C;
+    text-align:center;
+    height:22px;
+	width:984px;/*Es 984px porque los borde izquierdo y derecho tienen 8px cada uno en total deberia ser 1000px*/
+}
+
+.PieContenidoIzquierda{
+	text-align:left;
+	color:#B7B9BC;
+	font-family:Arial;
+	font-size:12px;
+    background-color:#585A5C;
+    text-align:center;
+    height:22px;
+}
+
+.PieContenidoDerecha{
+	text-align:right;
+	color:#868686;
+	font-family:Arial;
+	font-size:12px;
+}
+

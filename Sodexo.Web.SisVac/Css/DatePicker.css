@@ -1,0 +1,54 @@
+﻿.DatePicker
+{
+	padding-left:7px;
+	padding-right:0px;
+	background:url('../Imagenes/imgFechaCampo.png') no-repeat;
+	border-style:none;
+	height:16px;/*Es 16px porque hay un margen supérior e inferior de 1px, el alto total debe ser de 18px*/
+    line-height: 16px; /*Es para que se alinie verticalmente de forma correcta el texto en base a la altura del control 
+                        por eso debe coincidir con el height, no se ve en teimpo de diseño*/
+	font-size:12px;
+	color:#585a5c;
+    width:83px;/*Es 83px porque hay un margen izquierdo de 7px, el alto total debe ser de 90px*/
+	}
+
+.DatePicker:disabled {
+        color:#b7b9bc;
+    }
+
+/*.DatePicker:hover
+{
+	background:url(../Imagenes/imgFechaCampoHover.png);
+}*/
+
+/*.DatePicker:focus
+{
+	background:url(../Imagenes/imgFechaCampoHover.png); 
+}*/
+
+
+.MyCalendar .ajax__calendar_container {
+     /*border:1px solid #FF0000;*/ /*Espesor y color de borde*/
+     border:1px solid #b7b9bc; /*Espesor y color de borde*/
+     /*background-color:#505050;*//*Color de fondo*/
+     background-color:#f5f6f6;/*Color de fondo*/
+     /*color: #b9b9b9;*//*color de texto*/
+     color: #585a5c;/*color de texto*/
+	 font-family:Arial;
+ }
+ .MyCalendar .ajax__calendar_other .ajax__calendar_day,
+ .MyCalendar .ajax__calendar_other .ajax__calendar_year {
+     color: black;
+ }
+ .MyCalendar .ajax__calendar_hover .ajax__calendar_day,
+ .MyCalendar .ajax__calendar_hover .ajax__calendar_month,
+ .MyCalendar .ajax__calendar_hover .ajax__calendar_year {
+     color:#ed1b2e;/*Colo de la fecha que tiene el puntero encima*/
+ }
+ .MyCalendar .ajax__calendar_active .ajax__calendar_day,
+ .MyCalendar .ajax__calendar_active .ajax__calendar_month,
+ .MyCalendar .ajax__calendar_active .ajax__calendar_year {
+     /*color: #f6a806;*//*Color de la fecha seleccionada*/
+     color: #ed1b2e;/*Color de la fecha seleccionada*/
+     font-weight:bold;/*Peso de la fecha seleccionada*/
+ }

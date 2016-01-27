@@ -1,0 +1,167 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Master_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <%--<meta http-equiv="X-UA-Compatible" content="IE=8" />--%>
+    <title></title>
+    <link rel="stylesheet" href="../css/Master.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../css/Pagina.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../css/Menu.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../css/DropDownList.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../css/TextBox.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../css/DatePicker.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../css/GridView.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../css/Button.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../css/Cargando.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../css/GroupBox.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../css/Styles.css" type="text/css" media="screen, projection" />
+    <link rel="shortcut icon" href="../Imagenes/favicon.ico" />
+
+    <script type="text/javascript" src="../JavaScript/jquery.js"></script>
+    <script type="text/javascript" src="../JavaScript/Utilitario.js"></script>
+    <script src="../shadowbox/shadowbox.js"></script>
+    <link href="../shadowbox/shadowbox.css" rel="stylesheet" />
+    <script>
+    	
+    </script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <center>
+                    <table class="TablaMaster" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <table cellpadding="0" cellspacing="0" class="CabeceraMaster">
+                                    <tr>
+                                        <td class="CabeceraMasterIzq"></td>
+                                        <td class="Logo">
+                                            <a id="lnkLinkLogo" runat="server"><img border="0" id="imgLogo" runat="server" alt="Logo Mapfre"/></a>
+                                        </td>
+                                        <td class="Sesion">
+                                            <table class="SesionTabla">
+                                                <tr>
+                                                    <td >
+                                                        &nbsp;</td>
+                                                    <td class="SesionFechaHora" colspan="3">
+                                                        <asp:Label ID="lblFecha" runat="server" Text="Label" CssClass="SesionLabel"></asp:Label>
+                                                        <asp:Label ID="lblHora" runat="server" Text="Label" CssClass="SesionLabel"></asp:Label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="SesionAplicacion">
+                                                        <asp:Label ID="lblNombreAplicacion" runat="server" Text="Label" Font-Bold="False"></asp:Label>
+                                                        <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="True" AsyncPostBackTimeout="600">
+                                                        </asp:ScriptManager>
+                                                    </td>
+                                                    <td>
+                                                        <asp:Button ID="btnInicio" runat="server" CssClass="SessionInicio" OnClick="btnInicio_Click"></asp:Button>
+                                                    </td>
+                                                    <td>
+                                                        <asp:Button ID="btnMiCuenta" runat="server" CssClass="SessionMiCuenta" OnClick="btnMiCuenta_Click"></asp:Button>
+                                                    </td>
+                                                    <td>
+                                                        <asp:Button ID="btnCerrarSesion" runat="server" CssClass="SessionCerrarSesion" OnClick="btnCerrarSesion_Click"></asp:Button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td class="CabeceraMasterDer">
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="MargenSuperior">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="CabeceraMenu">
+                                            MENU</td>
+                                        <td class="CabeceraContenido">
+                                            <table cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td class="CabeceraContenidoTitulo">
+                                                        <asp:Label ID="lblTitulo" runat="server" Text="Label"></asp:Label>
+                                                    </td>
+                                                    <td class="CabeceraContenidoActual">
+                                                
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td >&nbsp;</td>
+                                        <td class="ContenidoMenuPrincipal">
+                    <asp:Menu ID="mnuMenu" runat="server" Orientation="Vertical" SkipLinkText="">
+                <Items>
+                    <asp:MenuItem NavigateUrl="#" Text="Funcionario del Canal" Value="">
+                        <asp:MenuItem NavigateUrl="http:frmRegistrarSolicitud.aspx" Text="Registrar Solicitud" Value="frmRegistrarSolicitud"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="http:frmBandejaFunc.aspx" Text="Bandeja de Solicitudes Pendientes" Value="frmBandejaFunc"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="#" Text="Aseguradora del Canal" Value="">
+                        <asp:MenuItem NavigateUrl="http:frmBandejaAseg.aspx" Text="Bandeja de Solicitudes Pendientes" Value="frmBandejaAseg"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="http:frmConsultarSolicitudAseg.aspx" Text="Consulta de Solicitudes" Value="frmConsultarSolicitudAseg"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="#" Text="Siniestros Mapfre" Value="">
+                        <asp:MenuItem NavigateUrl="http:frmBandejaSiniMapfre.aspx" Text="Bandeja de Solicitudes Pendientes" Value="frmBandejaSiniMapfre"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="http:frmConsultarSolSiniMapfre.aspx" Text="Consulta de Solicitudes" Value="frmConsultarSolSiniMapfre"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="#" Text="Suscriptor" Value="">
+                        <asp:MenuItem NavigateUrl="http:frmBandejaSusc.aspx" Text="Bandeja de Solicitudes" Value="frmBandejaSusc"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="#" Text="Medico" Value="">
+                        <asp:MenuItem NavigateUrl="http:frmBandejaMedico.aspx" Text="Bandeja de Solicitudes" Value="frmBandejaMedico"></asp:MenuItem>
+                    </asp:MenuItem>
+                </Items>
+            </asp:Menu>
+                                        </td>
+                                        <td class="Contenido" rowspan="2">
+                                            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                                <ContentTemplate>
+                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </ContentTemplate>
+                                            </asp:UpdatePanel>
+                                        </td>
+                                        <td>
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td >&nbsp;</td>
+                                        <td class="ContenidoBannerPortal">
+                                            <img border="0" id="imgBanner" runat="server" alt="Banner Mapfre"/><br />
+                                            <br />
+                                            <img border="0" id="imgTelefono" runat="server" alt="Logo Teléfono"/>
+                                        </td>
+                                        <td>
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="PieContenidoIzq">&nbsp;</td>
+                                        <td colspan="2" class="PieContenido">
+                                            <table cellspacing="0" cellpadding="0" class="PieContenidoTabla">
+                                                <tr>
+                                                    <td class="PieContenidoIzquierda">&copy; Copyright MAPFRE PERÚ. Todos los Derechos Reservados</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td class="PieContenidoDer">
+                                            &nbsp;</td>
+                                    </tr>
+                                </table>
+                        
+                            </td>
+                        </tr>
+                    </table>
+        </center>
+    </form>
+</body>
+</html>

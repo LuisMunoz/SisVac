@@ -1,0 +1,79 @@
+﻿.TablaMasterPopup {
+    width:960px;
+	/*table-layout:fixed;*/
+}
+
+.CabeceraMasterPopup {
+    /*background-color:#ED1B2E;*/
+    width:960px;
+    table-layout:fixed;
+}
+
+
+.TituloCabeceraMasterPopup {
+    background-color:#dededc;
+    text-align:left;
+    color:#8e8e8e;
+    font-family:Arial; 
+	font-size:18px;
+    font-weight:bold;
+    padding-left:20px;
+}
+
+    /*color:#dededc;*/
+
+/*.CabeceraMasterIzqPopup
+{
+	height:110px;
+	width:8px;
+	background-image:url(../Imagenes/BordeIzq.png);
+	padding:0px;
+
+}*/
+
+
+.LogoPopup {
+    width:186px;
+	height:100px;
+	margin:0px;
+	padding:0px;
+	background-image:url(../Imagenes/logo-mapfre-popup.jpg);
+}
+
+.SesionPopup {
+	padding-top:40px;
+    padding-left:10px;
+	vertical-align:top;
+    width:769px;
+	background-color:#ed1b2e;
+
+
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+
+.MargenSuperiorPopup {
+	 height:10px;
+	 font-size:1px;
+}
+
+
+
+.PieContenidoPopup{
+	background:url(../Imagenes/BackPieMaster.png);
+	height:30px;
+	padding:0px;
+}
+
+
+.PieContenidoCentroPopup{
+	text-align:center;
+	color:#868686;
+	font-family:Arial;
+	font-size:12px;
+}

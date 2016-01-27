@@ -1,0 +1,155 @@
+﻿
+.CeldaGroupBoxSupIzq 
+{
+    width:9px;
+    height:9px;
+    padding:0px;
+    font-size:1px;
+    background:url(../Imagenes/GroupBox/imgGroupBoxSupIzq.png);
+}
+
+.CeldaGroupBoxSupDer
+{
+    width:9px;
+    height:9px;
+    padding:0px;
+    font-size:1px;
+    background:url(../Imagenes/GroupBox/imgGroupBoxSupDer.png);
+}
+
+.CeldaGroupBoxInfIzq
+{
+    width:9px;
+    height:9px;
+    padding:0px;
+    font-size:1px;
+    background:url(../Imagenes/GroupBox/imgGroupBoxInfIzq.png);
+}
+
+.CeldaGroupBoxInfDer
+{
+    width:9px;
+    height:9px;
+    padding:0px;
+    font-size:1px;
+    background:url(../Imagenes/GroupBox/imgGroupBoxInfDer.png);
+}
+
+.CeldaGroupBoxSup
+{
+    /*width:9px;*/
+    height:9px;
+    padding:0px;
+    font-size:1px;
+    background:url(../Imagenes/GroupBox/imgGroupBoxSup.png);
+}
+
+.CeldaGroupBoxInf
+{
+    /*width:9px;*/
+    height:9px;
+    padding:0px;
+    font-size:1px;
+    background:url(../Imagenes/GroupBox/imgGroupBoxInf.png);
+}
+
+.CeldaGroupBoxIzq
+{
+    width:9px;
+    /*height:9px;*/
+    padding:0px;
+    font-size:1px;
+    background:url(../Imagenes/GroupBox/imgGroupBoxIzq.png);
+}
+
+.CeldaGroupBoxDer
+{
+    width:9px;
+    /*height:9px;*/
+    padding:0px;
+    font-size:1px;
+    background:url(../Imagenes/GroupBox/imgGroupBoxDer.png);
+}
+
+.CeldaMargen
+{
+    width:5px;
+    height:5px;
+    padding:0px;
+    font-size:1px;
+}
+
+
+
+.CeldaGroupBox2SupIzq 
+{
+    width:9px;
+    height:9px;
+    padding:0px;
+    font-size:1px;
+    background:url(../Imagenes/GroupBox/imgGroupBox2SupIzq.png);
+}
+
+.CeldaGroupBox2SupDer
+{
+    width:9px;
+    height:9px;
+    padding:0px;
+    font-size:1px;
+    background:url(../Imagenes/GroupBox/imgGroupBox2SupDer.png);
+}
+
+.CeldaGroupBox2InfIzq
+{
+    width:9px;
+    height:9px;
+    padding:0px;
+    font-size:1px;
+    background:url(../Imagenes/GroupBox/imgGroupBox2InfIzq.png);
+}
+
+.CeldaGroupBox2InfDer
+{
+    width:9px;
+    height:9px;
+    padding:0px;
+    font-size:1px;
+    background:url(../Imagenes/GroupBox/imgGroupBox2InfDer.png);
+}
+
+.CeldaGroupBox2Sup
+{
+    height:9px;
+    width:9px;
+    padding:0px;
+    font-size:1px;
+    background-color:#E5E5E7;
+}
+
+.CeldaGroupBox2Titulo
+{
+    font-family:Arial;
+    background-color:#E5E5E7;
+	font-size:14px;
+	font-weight:bold;
+	color:#585a5c;
+	padding-left:10px;
+	padding-right:5px;
+    text-align:left;
+    width:90px;
+    height:18px;
+}
+
+.CeldaGroupBox2Titulo2
+{
+    font-family:Arial;
+    background-color:#E5E5E7;
+	font-size:14px;
+	font-weight:bold;
+	color:#585a5c;
+	padding-left:10px;
+	padding-right:5px;
+    text-align:left;
+    width:150px;
+    height:18px;
+}

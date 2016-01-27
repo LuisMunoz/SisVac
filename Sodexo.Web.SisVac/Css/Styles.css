@@ -1,0 +1,245 @@
+﻿.Oculto {
+    display: none;
+}
+
+.bgspriteb {
+    background-image: url(images/breabcrumd.gif);
+    background-repeat: repeat-x;
+}
+
+.sub-breadcrumb {
+    display: block;
+    background-image: url(images/bg-current-bread.gif);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #ED1B2E;
+    padding: 0 30px 0 20px;
+    height: 29px;
+    font-size: 14px;
+    float: left;
+    color: #fff;
+}
+
+.cnt-titulos {
+    padding: 0;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 29px;
+    font-weight: bold;
+}
+
+.Formulario {
+    width: 100%;
+    border: solid 1px;
+    border-style: dotted;
+    font-family: 'DINRegular', Arial;
+}
+
+.modulo {
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.titu-modulo {
+    border-bottom: solid 1px;
+    margin-bottom: 4px;
+    padding-bottom: -4px;
+    font-family: 'DINRegular', Arial;
+    font-style: normal !important;
+    color: #b62020;
+    background: none;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    text-align: left;
+}
+
+.cnt-modulo {
+    padding: 10px;
+    display: block;
+    border-top: 0;
+    overflow: hidden;
+}
+
+.cnt-modulo-none {
+    padding: 10px;
+    display: none;
+    border-top: 0;
+    overflow: hidden;
+}
+
+.FilaRegistro {
+    margin-bottom: 2px;
+    overflow: hidden;
+    width: 100%;
+}
+
+    .FilaRegistro label {
+        font-family: Arial;
+        font-size: 12px;
+        color: #8e8e8e;
+        text-align: left;
+        width: 150px;
+        float: left;
+        margin: 1px 5px 5px 15px;
+    }
+
+.CajaRegistro {
+    margin-bottom: 4px;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+
+.LabelCampoPrioritario {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    color: #8e8e8e;
+    margin-left: 0px;
+}
+
+.TextoCampoMultiline {
+    border: 1px solid #DEDEDA;
+    width: 810px;
+    height: 96px;
+    line-height: 16px;
+    font-size: 12px;
+    font-family: 'DINRegular', Arial;
+    padding: 3px;
+    margin-right: 10px;
+    background-color: #F5F4F3;
+    color: #585a5c;
+    border-radius: 7px;
+    vertical-align: top;
+}
+
+.TextoCampoMultiline500 {
+    border: 1px solid #DEDEDA;
+    width: 500px;
+    height: 64px;
+    line-height: 16px;
+    font-size: 12px;
+    font-family: 'DINRegular', Arial;
+    padding: 3px;
+    margin-right: 10px;
+    background-color: #F5F4F3;
+    color: #585a5c;
+    border-radius: 7px;
+    vertical-align: top;
+}
+
+.RadioCampo {
+    font-size: 12px;
+    font: Arial;
+    color: #585a5c;
+    height: 16px;
+}
+
+.ListBoxMediano {
+    font-size: 12px;
+    font: Arial;
+    color: #585a5c;
+    display: inline-block;
+    padding-left: 7px;
+    padding-right: 0px;
+    width: 350px;
+    margin: 0;
+    overflow: scroll;
+}
+
+.grilla {
+    width: 100%;
+}
+
+    .grilla th {
+        background-color: #9AAE04;
+        font-weight: bold;
+        color: White;
+        border: solid 1px #FFF;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+    }
+
+    .grilla td {
+        border: solid 1px #DDD;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .grilla table span {
+        font-weight: bold;
+    }
+
+    .grilla .filasVacias td {
+        text-align: center;
+        font-size: 12px;
+        color: #515559;
+        border: solid 1px #FFF;
+    }
+
+    .grilla td.centrada {
+        text-align: center;
+    }
+
+.mantenedorPost {
+    color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #F21A1A;
+}
+
+    .mantenedorPost tr.filaTitulo {
+        font-weight: normal;
+        color: #000000;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #F21A1A;
+        background-repeat: repeat-x;
+        background-position: 0px;
+        background-image: url('../Imagenes/fondoPlomo.png');
+        background-size: contain;
+    }
+
+    .mantenedorPost tr.filaPie {
+        background-color: #EEE;
+        font-weight: normal;
+        color: #000000;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #BBB;
+        height: 25px;
+    }
+
+    .mantenedorPost tr.filaTituloSinBordeSuperior {
+        border-top: 0px !important;
+    }
+
+    .mantenedorPost tr.filaTituloSinBordeInferior {
+        border-bottom: 0px !important;
+    }
+
+.mantenedor td.filaSinBorde {
+    border-bottom: 0px none !important;
+}
+
+.mantenedor a.filaSinBorde {
+    border-bottom: 0px none !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: White !important;
+}
+
+#ContentPlaceHolder1_chblTipoDocumento tr td {
+    width: 49.76%;
+    float: left;
+    text-align: left;
+    font-family: Verdana;
+    font-size: 10px;
+}

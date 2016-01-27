@@ -1,0 +1,143 @@
+﻿.ButtonCampo150
+{
+	font-family:Arial;
+	font-size:12px;
+	color:#8e8e8e;
+	border:none;
+	background-image:url(../Imagenes/Button/imgButton150.png);
+    background-repeat:no-repeat;
+	width:150px;
+	height:44px;
+}
+
+.ButtonCampo150:hover
+{
+	background-image:url(../Imagenes/Button/imgButton150Hover.png);
+    background-repeat:no-repeat;
+}
+
+
+.ButtonSecundarioCampo100
+{
+	font-family:Arial;
+	font-size:12px;
+	color:#ffffff;
+	border:none;
+	background-image:url(../Imagenes/Button/imgButtonSecundario100.png);
+    background-repeat:no-repeat;
+	width:100px;
+	height:18px;
+}
+
+.ButtonSecundarioCampo100:hover
+{
+	background-image:url(../Imagenes/Button/imgButtonSecundario100Hover.png);
+    background-repeat:no-repeat;
+}
+
+
+
+.ButtonSecundarioCampo150
+{
+	font-family:Arial;
+	font-size:12px;
+	color:#ffffff;
+	border:none;
+	background-image:url(../Imagenes/Button/imgButtonSecundario150.png);
+    background-repeat:no-repeat;
+	width:150px;
+	height:20px;
+}
+
+.ButtonSecundarioCampo150:hover
+{
+	background-image:url(../Imagenes/Button/imgButtonSecundario150Hover.png);
+    background-repeat:no-repeat;
+}
+
+
+.ButtonNoVisible
+{
+    border:none;
+    /*background-color:transparent;*/
+    background:none;
+}
+
+
+
+
+
+.ButtonQuitar
+{
+	border:none;
+	background-image:url(../Imagenes/Button/imgQuitar.jpg);
+    background-repeat:no-repeat;
+	width:16px;
+	height:16px;
+    vertical-align:bottom;
+}
+
+
+.ButtonBuscar
+{
+	border:none;
+	background-image:url(../Imagenes/Button/btnBuscar.jpg);
+    background-repeat:no-repeat;
+	width:16px;
+	height:16px;
+    vertical-align:bottom;
+}
+
+/*.ButtonSecundarioCampo150:hover
+{
+	background-image:url(../Imagenes/Button/imgButtonSecundario150Hover.png);
+}*/
+
+
+
+
+.SessionCerrarSesion
+{
+	background:url(../Imagenes/Button/imgCerrarSesionFinal.jpg);
+	width:136px;
+	height:43px;
+    border:none;
+}
+
+
+.SessionCerrarSesion:hover
+{
+	background:url(../Imagenes/Button/imgCerrarSesionHoverFinal.jpg);
+	width:136px;
+	height:43px;
+}
+
+.SessionMiCuenta
+{
+	background:url(../Imagenes/Button/imgMiCuentaFinal.jpg);
+	width:104px;
+	height:43px;
+    border:none;
+}
+
+.SessionMiCuenta:hover
+{
+	background:url(../Imagenes/Button/imgMiCuentaHoverFinal.jpg);
+	width:104px;
+	height:43px;
+}
+
+.SessionInicio
+{
+	background:url(../Imagenes/Button/imgInicioFinal.jpg);
+	width:76px;
+	height:43px;
+    border:none;
+}
+
+.SessionInicio:hover
+{
+	background:url(../Imagenes/Button/imgInicioHoverFinal.jpg);
+	width:76px;
+	height:43px;
+}

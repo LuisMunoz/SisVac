@@ -1,0 +1,309 @@
+﻿.Menu
+{  
+
+}
+
+.Menu ul li
+{
+	background-image:url(../Imagenes/ImgFondoItemMenu.png);
+    text-align:left;
+    width:183px;/*Es porque tiene un padding-left de 32 px y su tamaño total debe ser de 215 px*/
+	padding-left:32px;
+	height:24px;/*Es porque tiene un padding-top de 10 px y su tamaño total debe ser de 34 px*/
+	padding-top:10px;
+}
+
+.Menu ul li:hover
+{
+	background-image:url(../Imagenes/ImgFondoItemMenuHover.png);
+}
+
+
+/*.Menu ul li:hover a
+{
+	color:#00FF00;
+}*/
+
+.Menu ul li a
+{
+    color:#8e8e8a;
+	font-family:Arial;
+	font-size:12px;
+}
+
+.Menu ul li a:hover
+{
+    /*color:#d88b92;*/
+    color:#FFFFFF;
+}
+
+/*Item comun*/
+.ItemMenu
+{
+	background-image:url(../Imagenes/Menu/ImgFondoItemMenu.png);
+    text-align:left;
+    width:183px;/*Es porque tiene un padding-left de 32 px y su tamaño total debe ser de 215 px*/
+	padding-left:32px;
+	height:24px;/*Es porque tiene un padding-top de 10 px y su tamaño total debe ser de 34 px*/
+	padding-top:10px;
+}
+
+.ItemMenu:hover
+{
+	background-image:url(../Imagenes/Menu/ImgFondoItemMenuHover.png);
+}
+
+.ItemMenu a
+{
+    color:#8e8e8a;
+	font-family:Arial;
+	font-size:12px;
+}
+
+.ItemMenu a:hover
+{
+    /*color:#d88b92;*/
+    color:#FFFFFF;
+}
+
+/*Automoviles*/
+.ItemAuto
+{
+	background-image:url(../Imagenes/Menu/ImgFondoItemMenuAuto.png);
+    text-align:left;
+    width:183px;/*Es porque tiene un padding-left de 32 px y su tamaño total debe ser de 215 px*/
+	padding-left:32px;
+	height:24px;/*Es porque tiene un padding-top de 10 px y su tamaño total debe ser de 34 px*/
+	padding-top:10px;
+}
+
+.ItemAuto:hover
+{
+	background-image:url(../Imagenes/Menu/ImgFondoItemMenuHoverAuto.png);
+}
+
+.ItemAuto a
+{
+    color:#8e8e8a;
+	font-family:Arial;
+	font-size:12px;
+}
+
+.ItemAuto a:hover
+{
+    /*color:#d88b92;*/
+    color:#FFFFFF;
+}
+
+/*Bandeja*/
+.ItemBandeja
+{
+	background-image:url(../Imagenes/Menu/ImgFondoItemMenuBandeja.png);
+    text-align:left;
+    width:183px;/*Es porque tiene un padding-left de 32 px y su tamaño total debe ser de 215 px*/
+	padding-left:32px;
+	height:24px;/*Es porque tiene un padding-top de 10 px y su tamaño total debe ser de 34 px*/
+	padding-top:10px;
+}
+
+.ItemBandeja:hover
+{
+	background-image:url(../Imagenes/Menu/ImgFondoItemMenuHoverBandeja.png);
+}
+
+.ItemBandeja a
+{
+    color:#8e8e8a;
+	font-family:Arial;
+	font-size:12px;
+}
+
+.ItemBandeja a:hover
+{
+    /*color:#d88b92;*/
+    color:#FFFFFF;
+}
+
+
+/*Transporte*/
+.ItemTrans
+{
+	background-image:url(../Imagenes/Menu/ImgFondoItemMenuTransporte.png);
+    text-align:left;
+    width:183px;/*Es porque tiene un padding-left de 32 px y su tamaño total debe ser de 215 px*/
+	padding-left:32px;
+	height:24px;/*Es porque tiene un padding-top de 10 px y su tamaño total debe ser de 34 px*/
+	padding-top:10px;
+}
+
+.ItemTrans:hover
+{
+	background-image:url(../Imagenes/Menu/ImgFondoItemMenuHoverTransporte.png);
+}
+
+.ItemTrans a
+{
+    color:#8e8e8a;
+	font-family:Arial;
+	font-size:12px;
+}
+
+.ItemTrans a:hover
+{
+    /*color:#d88b92;*/
+    color:#FFFFFF;
+}
+
+
+/*SOAT*/
+.ItemSoat
+{
+	background-image:url(../Imagenes/Menu/ImgFondoItemMenuSoat.png);
+    text-align:left;
+    width:183px;/*Es porque tiene un padding-left de 32 px y su tamaño total debe ser de 215 px*/
+	padding-left:32px;
+	height:24px;/*Es porque tiene un padding-top de 10 px y su tamaño total debe ser de 34 px*/
+	padding-top:10px;
+}
+
+.ItemSoat:hover
+{
+	background-image:url(../Imagenes/Menu/ImgFondoItemMenuHoverSoat.png);
+}
+
+.ItemSoat a
+{
+    color:#8e8e8a;
+	font-family:Arial;
+	font-size:12px;
+}
+
+.ItemSoat a:hover
+{
+    /*color:#d88b92;*/
+    color:#FFFFFF;
+}
+
+/*HOGAR*/
+.ItemHogar
+{
+	background-image:url(../Imagenes/Menu/ImgFondoItemMenuHogar.png);
+    text-align:left;
+    width:183px;/*Es porque tiene un padding-left de 32 px y su tamaño total debe ser de 215 px*/
+	padding-left:32px;
+	height:24px;/*Es porque tiene un padding-top de 10 px y su tamaño total debe ser de 34 px*/
+	padding-top:10px;
+}
+
+.ItemHogar:hover
+{
+	background-image:url(../Imagenes/Menu/ImgFondoItemMenuHoverHogar.png);
+}
+
+.ItemHogar a
+{
+    color:#8e8e8a;
+	font-family:Arial;
+	font-size:12px;
+}
+
+.ItemHogar a:hover
+{
+    /*color:#d88b92;*/
+    color:#FFFFFF;
+}
+
+/*Generado por Asp .Net*/
+/*Inicio*/
+/*Agrego esto porque la propiedad IncludeStyleBlock del control menu lo voy a poner a falso*/
+/*el truco es copiar los CSS que renderiza el .net que es con la etiqueta [NombrePagina].aspx
+  y luego ponerlos en el CSS y a continuacion la propiedad IncludeStyleBlock del control 
+  menu lo voy a poner a falso*/
+#mnuMenu UL
+{
+    padding-bottom:0px;
+    list-style-type:none;
+    margin:0px;
+    padding-left:0px;
+    width:auto;
+    padding-right:0px;
+    list-style-image:none;
+    padding-top:0px;
+}
+
+#mnuMenu A
+{
+    display:block;
+    white-space:nowrap;
+    text-decoration:none;
+}
+
+#mnuMenu A.popout
+{
+    /*background-image:url(/WebResource.axd?d=C5v0Fvni8KqFU8kc8-Z6mhpet92Vnal1-yfPak0WBp2-2jIK65mFocZmLfpMhVKzMT9zUqjjsyGpYnshhgclOkDMGe4wdlWzAyE9q-7tfr41&t=634773918900000000);*/ 
+    PADDING-RIGHT: 14px;
+    background-repeat:no-repeat;
+    background-position:right center;
+}
+
+#mnuMenu UL.dynamic
+{
+    z-index: 1;
+}
+/*Fin*/
+
+/*.Menu ul li a.popout
+{
+    background-repeat:repeat-x;
+    background-image:url(../Imagenes/ImgFondoItemMenuHover.png);
+}
+
+#mnuMenu A.popout
+{
+    background-repeat:repeat-x;
+    background-image:url(../Imagenes/ImgFondoItemMenuHover.png);
+}*/
+
+
+/*.Menu ul
+{  
+    background:#7795BD;
+}*/
+
+/*.Menu ul li
+{
+	background-image:url(../Imagenes/ImgFondoItemMenu.png);
+    text-align:left;
+	padding-left:10px;
+
+    width:200px;
+}
+
+	.Menu ul li:hover
+	{
+		background:#7795BD url(../Imagenes/ImgFondoItemMenuHover.png) repeat-x;
+	}
+
+.Menu ul li a
+{
+    color: black;
+    padding: 4px 2px 4px;
+    padding-left:8px !important;
+    border:1px solid #648ABD;
+    border-bottom: 0;
+}
+
+.Menu ul li a:hover
+{
+    background-image: none;
+}
+
+.Menu ul li a:hover
+{
+    color: White;
+}
+
+.Menu ul li a
+{
+    color: Black;
+}*/
