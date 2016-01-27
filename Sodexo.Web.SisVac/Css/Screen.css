@@ -61,7 +61,7 @@
 }
 .menu-tree table tbody tr td div
 {
-	background:url(../Imagenes/diagonal3.png) 0 0 repeat-x; 
+	background:url(../Images/diagonal3.png) 0 0 repeat-x; 
 	width:23px !important; 
 	height:24px !important;
 	padding-top:0px;
@@ -80,7 +80,7 @@
 
 td.nodobg
 {
-	background:url(../Imagenes/diagonal3.png) 0 0 repeat-x;
+	background:url(../Images/diagonal3.png) 0 0 repeat-x;
 }
 
 /**/

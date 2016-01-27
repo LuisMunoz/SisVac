@@ -7,18 +7,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <%--<meta http-equiv="X-UA-Compatible" content="IE=8" />--%>
     <title></title>
-    <link rel="stylesheet" href="../css/Master.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="../css/Pagina.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="../css/Menu.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="../css/DropDownList.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="../css/TextBox.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="../css/DatePicker.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="../css/GridView.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="../css/Button.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="../css/Cargando.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="../css/GroupBox.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="../css/Styles.css" type="text/css" media="screen, projection" />
-    <link rel="shortcut icon" href="../Imagenes/favicon.ico" />
+    <link rel="stylesheet" href="../Css/Master.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../Css/Pagina.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../Css/Menu.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../Css/DropDownList.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../Css/TextBox.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../Css/DatePicker.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../Css/GridView.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../Css/Button.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../Css/Cargando.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../Css/GroupBox.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="../Css/Styles.css" type="text/css" media="screen, projection" />
+    <link rel="shortcut icon" href="../Images/favicon.ico" />
 
     <script type="text/javascript" src="../JavaScript/jquery.js"></script>
     <script type="text/javascript" src="../JavaScript/Utilitario.js"></script>
@@ -27,8 +27,6 @@
     <script>
     	
     </script>
-
-
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
