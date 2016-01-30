@@ -19,9 +19,9 @@ public partial class Master_MasterPage : System.Web.UI.MasterPage
                 lnkLinkLogo.HRef = ConfigurationManager.AppSettings["PATH_LOGIN"].ToString();
                 lblNombreAplicacion.Text = ConfigurationManager.AppSettings["NOM_APL"].ToString();
                 lblFecha.Text = DateTime.Today.ToString("dddd, dd' de 'MMMM' del 'yyyy") + " | ";
-                CargarMenu();
+                //CargarMenu();
             }
-            Verificar_Sesiones();
+            //Verificar_Sesiones();
         }
 
         public void Verificar_Sesiones()

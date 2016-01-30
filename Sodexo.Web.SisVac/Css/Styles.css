@@ -263,3 +263,5 @@ h2.ingreso { float:left; background:url(../Images/title_ingreso.gif) no-repeat 0
     margin: 15px 0 0 0; 
     padding:20px 0 0px 0px;
  }
+ .col_03 { float:right; width:218px;}
+ .box_nece { float:left; padding:37px 0 10px 0;}

@@ -26,14 +26,14 @@
                 Estás en una zona segura.</div>
         </div>
         <div class="header">
-            <a href="http://www.telefonica.com.pe" class="gohome2" target="_blank"><span>ir a: www.telefonica.com.pe</span></a>
+            <a href="http://pe.sodexo.com/pesp/default.aspx" class="gohome2" target="_blank"><span>ir a: pe.sodexo.com</span></a>
             <h1>
-                <a href="http://www.telefonica.com.pe" class="telefonica" target="_blank"><span>Telefonica</span></a></h1>
+                <a href="http://pe.sodexo.com/pesp/default.aspx" class="telefonica" target="_blank"><span>Sodexo</span></a></h1>
         </div>
         <div class="box">
             <div class="wrapper">
                 <h2 class="ingreso">
-                    <span>Ingreso</span></h2>
+                    <span></span></h2>
             </div>
             <div class="wrapper2">
                 <div class="width_total">
@@ -418,52 +418,12 @@
                 <asp:ModalPopupExtender ID="mpeClave" runat="server" BehaviorID="bmpeClave" PopupControlID="pnlClave"
                     TargetControlID="btnTabla" BackgroundCssClass="modalBackground">
                 </asp:ModalPopupExtender>
-                <%-- FIN REQ-015191 - LCAICEDO 28-10-2011 --%>
             </div>
-            <ul class="breadcrumb">
-                <li class="where">Estás en...</li>
-                <li><a href="#">Administrador de Aplicaciones COL</a></li>
-                <li class="actual">Ingreso</li>
-            </ul>
             <div class="pie">
-                <a href="http://www.telefonica.com.pe/" class="telefonica" target="_blank"><span>Telef&oacute;nica</span></a>
+                <a href="http://pe.sodexo.com/pesp/default.aspx" class="telefonica" target="_blank"><span>Sodexo</span></a>
             </div>
             <div class="certificado" style="width:300px">
             </div>
-            <table style="font-size: 11px; width:160px; float:right; margin-top:15px;">
-                <tr>
-                    <td style="vertical-align:middle;">Versión&nbsp;Soportada:</td>
-                    <td style="vertical-align:middle;">
-                        <a id="A2" title="Internet Explorer 7.0" href="http://www.microsoft.com/windows/downloads/ie/getitnow.mspx"
-                            target="_blank">
-                            <asp:Image ID="Image1" ImageUrl="~/App_themes/col01/img/ico_ie.gif" AlternateText="Internet Explorer" runat="server" />
-                        </a>
-                    </td>
-                    <td style="vertical-align:middle;"><span>7.x</span></td>
-                    <%--width:270px;
-                    <td style="vertical-align:middle;">
-                        <a id="A3" title="Firefox 3.0" class="iconFF" href="http://www.mozilla.com/en-US/firefox/all.html"
-                            target="_blank">
-                            <asp:Image ID="Image2" ImageUrl="~/App_themes/col01/img/ico_ff.gif" AlternateText="Firefox" runat="server"/>
-                        </a>
-                    </td>
-                    <td style="vertical-align:middle;"><span>3.x</span></td>
-                    <td style="vertical-align:middle;">
-                        <a id="A4" title="Safari 3.0" class="iconOP" href="http://www.apple.com/safari/download/"
-                            target="_blank">
-                            <asp:Image ID="Image3" ImageUrl="~/App_themes/col01/img/ico_op.gif" AlternateText="Safari" runat="server"/>
-                        </a>
-                    </td>
-                    <td style="vertical-align:middle;"><span>3.x</span></td>
-                    <td style="vertical-align:middle;">
-                        <a id="A5" title="Chrome" class="iconOP" href="http://www.google.com/chrome" target="_blank">
-                            <asp:Image ID="Image4" ImageUrl="~/App_themes/col01/img/ico_ch.gif" AlternateText="Chrome" runat="server"/>
-                        </a>
-                    </td>
-                    <td style="vertical-align:middle;"><span>1.x</span></td>
-                    --%>
-                </tr>
-            </table>
         </div>
     </div>
     </form>

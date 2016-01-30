@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="../Css/Styles.css" type="text/css" media="screen, projection" />
     <link rel="shortcut icon" href="../Images/favicon.ico" />
 
-    <script type="text/javascript" src="../JavaScript/jquery.js"></script>
-    <script type="text/javascript" src="../JavaScript/Utilitario.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="../Scripts/Utilitario.js"></script>
     <script src="../shadowbox/shadowbox.js"></script>
     <link href="../shadowbox/shadowbox.css" rel="stylesheet" />
     <script>
@@ -30,7 +30,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body onload="muestraReloj('lblHora')">
     <form id="form1" runat="server">
         <center>
                     <table class="TablaMaster" cellspacing="0" cellpadding="0">
@@ -40,7 +40,7 @@
                                     <tr>
                                         <td class="CabeceraMasterIzq"></td>
                                         <td class="Logo">
-                                            <a id="lnkLinkLogo" runat="server"><img border="0" id="imgLogo" runat="server" alt="Logo Sodexo" src="~/Images/SodexoLogo.png" /></a>
+                                            <a id="lnkLinkLogo" runat="server"><img border="0" id="imgLogo" runat="server" alt="Logo Sodexo" src="~/Images/SodexoLogo.png" style="background-color:white;"  /></a>
                                         </td>
                                         <td class="Sesion">
                                             <table class="SesionTabla">
