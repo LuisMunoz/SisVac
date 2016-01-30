@@ -13,7 +13,7 @@
 {
 	height:110px;
 	width:8px;
-	background-image:url(../Imagenes/BordeIzq.jpg);
+	background-image:url(../Images/BordeIzq.jpg);
 	padding:0px;
 }
 
@@ -21,7 +21,7 @@
 {
 	height:110px;
 	width:8px;
-	background-image:url(../Imagenes/BordeIzq.jpg);
+	background-image:url(../Images/BordeIzq.jpg);
 	padding:0px;
 }
 
@@ -29,13 +29,13 @@
 {
 	height:110px;
 	width:8px;
-	background-image:url(../Imagenes/BordeDer.jpg);
+	background-image:url(../Images/BordeDer.jpg);
 	padding:0px;
 }
 
 .Logo {
     width:215px;
-	background-color:#ed1b2e;
+	/*background-color:#ed1b2e;*/
 	margin:0px;
 	padding:0px;
 }
@@ -93,7 +93,7 @@
     border-radius:15px;
     font-family:Segoe;
     color:#797979;
-    background-image:url(../Imagenes/FondoBotonSesion.jpg);
+    background-image:url(../Images/FondoBotonSesion.jpg);
     border:none;
     font-size:14px;
     height:30px;
@@ -104,7 +104,7 @@
     border-radius:15px;
     font-family:Segoe;
     color:#797979;
-    background-image:url(../Imagenes/FondoBotonSesion.jpg);
+    background-image:url(../Images/FondoBotonSesion.jpg);
     border:none;
     font-size:14px;
     height:30px;
@@ -115,7 +115,7 @@
     border-radius:15px;
     font-family:Segoe;
     color:#797979;
-    background-image:url(../Imagenes/FondoBotonSesion.jpg);
+    background-image:url(../Images/FondoBotonSesion.jpg);
     border:none;
     font-size:14px;
     height:30px;
@@ -126,7 +126,7 @@
     border-radius:15px;
     font-family:Segoe;
     color:#797979;
-    background-image:url(../Imagenes/FondoBotonSesion.jpg);
+    background-image:url(../Images/FondoBotonSesion.jpg);
     border:none;
     font-size:14px;
     height:30px;
@@ -140,7 +140,7 @@
 
 .CabeceraMenu {
     width:190px;/*Es porque tiene un padding-left de 25 px y su tamaño total debe ser de 215 px*/
-	background-image:url(../Imagenes/imgFondoTituloMenu.png);
+	background-image:url(../Images/imgFondoTituloMenu.png);
 	height:29px;/*Es porque tiene un padding-top de 2 px y su tamaño total debe ser de 31 px*/
 	/*color:#383737;*/
     color:#FFFFFF;
@@ -155,17 +155,17 @@
 }
 
 .PieMenu {
-	background-image:url(../Imagenes/Menu/imgFondoPieMenu.png);
+	background-image:url(../Images/Menu/imgFondoPieMenu.png);
 	height:8px;
 }
 
 /*.CabeceraMenu:hover {
     color:#FFFFFF;
-	background-image:url(../Imagenes/imgFondoTituloMenuHover.png);
+	background-image:url(../Images/imgFondoTituloMenuHover.png);
 }*/
 
 .CabeceraMenu span{
-	background:url(../Imagenes/icon-more-menu.png) left no-repeat; 
+	background:url(../Images/icon-more-menu.png) left no-repeat; 
 	padding:0 0 0 15px;
 }
 
@@ -184,7 +184,7 @@
 }
 
 .ContenidoBanner{
-	background-image:url(../Imagenes/Portal/imgBanner.jpg);
+	background-image:url(../Images/Portal/imgBanner.jpg);
     height:231px;
     background-repeat:no-repeat;
 }
@@ -194,7 +194,7 @@
 }
 
 .ContenidoTelefono{
-	background-image:url(../Imagenes/Portal/imgTelefono.jpg);
+	background-image:url(../Images/Portal/imgTelefono.jpg);
     height:71px;
     background-repeat:no-repeat;
 }
@@ -209,7 +209,7 @@
 
 .CabeceraContenido {
     /*width:754px;*/
-	background-image:url(../Imagenes/imgFondoBarraMenu.png);
+	background-image:url(../Images/imgFondoBarraMenu.png);
 	text-align:left;
 	padding:0px;
 	/*padding-bottom:0px;
@@ -231,7 +231,7 @@
 }
 
 .CabeceraContenidoActual {
-    background:url(../Imagenes/imgFlechaTitulo.png) left no-repeat;
+    background:url(../Images/imgFlechaTitulo.png) left no-repeat;
 	width:15px;
 }
 
@@ -269,18 +269,18 @@
 }*/
 
 .PieContenido{
-	/*background:url(../Imagenes/BackPieMaster.png);
+	/*background:url(../Images/BackPieMaster.png);
 	height:30px;*/
 	padding:0px;
 }
 
 .PieContenidoIzq{
-	background:url(../Imagenes/Portal/imgPieBordeIzq.png);
+	background:url(../Images/Portal/imgPieBordeIzq.png);
     width:8px;
 }
 
 .PieContenidoDer{
-	background:url(../Imagenes/Portal/imgPieBordeDer.png);
+	background:url(../Images/Portal/imgPieBordeDer.png);
     width:8px;
 }
 

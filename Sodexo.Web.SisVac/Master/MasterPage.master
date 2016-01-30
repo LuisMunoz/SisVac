@@ -40,7 +40,7 @@
                                     <tr>
                                         <td class="CabeceraMasterIzq"></td>
                                         <td class="Logo">
-                                            <a id="lnkLinkLogo" runat="server"><img border="0" id="imgLogo" runat="server" alt="Logo Mapfre"/></a>
+                                            <a id="lnkLinkLogo" runat="server"><img border="0" id="imgLogo" runat="server" alt="Logo Sodexo" src="~/Images/SodexoLogo.png" /></a>
                                         </td>
                                         <td class="Sesion">
                                             <table class="SesionTabla">
@@ -147,7 +147,7 @@
                                         <td colspan="2" class="PieContenido">
                                             <table cellspacing="0" cellpadding="0" class="PieContenidoTabla">
                                                 <tr>
-                                                    <td class="PieContenidoIzquierda">&copy; Copyright MAPFRE PERÚ. Todos los Derechos Reservados</td>
+                                                    <td class="PieContenidoIzquierda">&copy; Copyright SODEXO PERÚ. Todos los Derechos Reservados</td>
                                                 </tr>
                                             </table>
                                         </td>
