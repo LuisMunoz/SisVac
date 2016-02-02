@@ -352,7 +352,7 @@ function MostrarCargando() {
     titulo.innerHTML = "Cargando...";
 
     var img = new Image();
-    img.src = "../Imagenes/Cargando/MAPFRE_3D_animation.gif";
+    img.src = "../Images/Cargando/MAPFRE_3D_animation.gif";
     img.alt = "Cargando";
     img.border = "1";
 
@@ -417,16 +417,16 @@ function OcultarCargandoPadre() {
     }
 }
 
-function pageLoad() {
+//function pageLoad() {
 
-    Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(MostrarCargando);
+//    //Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(MostrarCargando);
+//    //Sys.WebForms.PageRequestManager.getInstance().add_endRequest(OcultarCargando);
 
-    Sys.WebForms.PageRequestManager.getInstance().add_endRequest(OcultarCargando);
-
-    QuitarDivMenu('mnuMenu');
-
-
-}
+//    Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(showObject('Processing'));
+//    //Sys.WebForms.PageRequestManager.getInstance().add_endRequest(hideObject('Processing'));
+    
+//    //QuitarDivMenu('mnuMenu');
+//}
 
 
 function PopupCenter(pageURL, title, w, h) {
@@ -779,5 +779,57 @@ function doClick() {
     optionsSelect.size = optionsSelect.options.length;
 
 }
+
+function showObject(id) { $('#' + id).css({ visibility: "visible", display: "block" }); }
+function hideObject(id) { $('#' + id).css({ visibility: "hidden", display: "none" }); }
+
+
+
+
+
+var app = Sys.Application;
+app.add_load(ApplicationLoad);
+app.add_init(ApplicationInit);
+app.add_disposing(ApplicationDisposing);
+app.add_unload(ApplicationUnload);
+
+function ApplicationInit(sender) {
+    var prm = Sys.WebForms.PageRequestManager.getInstance();
+    if (!prm.get_isInAsyncPostBack()) {
+        prm.add_initializeRequest(InitializeRequest);
+        prm.add_beginRequest(BeginRequest);
+        prm.add_pageLoading(PageLoading);
+        prm.add_pageLoaded(PageLoaded);
+        prm.add_endRequest(EndRequest);
+
+    }
+
+    hideObject('Processing');
+}
+
+
+function ApplicationLoad(sender, args) {
+    /*isPartialLoad = args.get_isPartialLoad();*/
+}
+function ApplicationUnload(sender) { }
+function ApplicationDisposing(sender) { }
+
+function pageLoad(sender, args) {
+}
+
+function pageUnload() { }
+
+function InitializeRequest(sender, args) {
+    showObject('Processing');
+}
+
+function BeginRequest(sender, args) { }
+
+function PageLoading(sender, args) {
+}
+function PageLoaded(sender, args) {
+    hideObject('Processing');
+}
+function EndRequest(sender, args) { }
 
 

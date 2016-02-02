@@ -298,9 +298,10 @@ h2.ingreso { float:left; background:url(../Images/title_ingreso.gif) no-repeat 0
 }
 .f5f6f6_01 {float:left;	height:6px;	width:100%;	background:url(../Images/f5f6f6_01.gif) no-repeat 0 0;	font-size:1px;}
 .f5f6f6_02 { float:right; height:6px; width:6px; background:url(../Images/f5f6f6_02.gif) no-repeat 0 0; font-size:1px;}
-.col_04 {float:left;width:701px;padding:0 0 5px 20px;}
-.cont_c02_detalle {	float:left;	width:699px;	_width:698px;	border:solid #d9dedf;	border-width:0 1px; background:url(../img/fon_gris.gif) repeat-x 0 0}
-.col_04 .recibo_dig{background: url(../img/ico_pc.gif) left no-repeat;height:33px;font-size:25px;font-family:Verdana, Geneva, sans-serif;color:#515559;padding:7px 0 5px 50px;margin-bottom:13px;text-align:justify;} 
+.col_04 {float:left;width:701px;padding:0 0 5px 0px;}
+.cont_c02_detalle {	float:left;	width:699px; text-align:left;	_width:698px;	border:solid #d9dedf;	border-width:0 1px; background:url(../Images/fon_gris.gif) repeat-x 0 0}
+.cont_c02_detalle2 {float:left;	width:660px; text-align:left;	_width:660px;	border:solid #d9dedf;	border-width:0 1px; background:url(../Images/fon_gris.gif) repeat-x 0 0}
+.col_04 .recibo_dig{background: url(../img/ico_pc.gif) left no-repeat;height:33px;font-size:25px;font-family:Verdana, Geneva, sans-serif;color:#515559;padding:7px 0 5px 30px;margin-bottom:13px;text-align:justify;} 
 .Espaciofiltro div.separador{width:50%; }
 .Espaciofiltro, .Espaciofiltro div{float:left; }
 .Espaciofiltro {
@@ -309,4 +310,106 @@ h2.ingreso { float:left; background:url(../Images/title_ingreso.gif) no-repeat 0
     margin: 10px 0 0 0;
     padding: 10px 0 10px 00px;
 }
-.Tabla_filtro_txt{font-size:12px; font-weight:600; width:auto; float:left; margin: 0 0 0 20px; _margin: 0 0 0 10px;}
+.Tabla_filtro_txt{font-size:12px; font-weight:600; width:auto; float:left; margin: 0 0 0 30px; _margin: 0 0 0 10px;}
+
+.cuadrodes{
+    height:auto;
+	width:559px;
+    border:0 none;
+    font-family:Arial,Helvetica,sans-serif;
+    padding:0;
+    margin:0px;
+    font-size:12px;
+    background-color:#FFF;
+    color:#515559;
+	float:left;
+}
+.lineblu {width:510px; background:#6ba8ba; height:30px; text-align:left; float:left; color:#FFF; padding: 0px 0 0 20px; font-weight:600; margin-bottom:19px; font-size:10px;}
+.txt_linese{width:485px; padding:0 21px 50px 21px; font-size:12px; float:left;}
+.f5f6f6_01 {float:left;	height:6px;	width:100%; background:url(../Images/f5f6f6_01.gif) no-repeat 0 0;	font-size:1px;}
+.col_02 .f5f6f6_01, .col_02 .f5f6f6_03, .col_02 .fff_03 { _width:460px;}
+.col_03 .f5f6f6_01, .col_03 .f5f6f6_03, .col_03 .fff_03 { _width:218px;}
+.f5f6f6_02 { float:right; height:6px; width:6px; background:url(../Images/f5f6f6_02.gif) no-repeat 0 0; font-size:1px;}
+.fff_03_bla {
+	float:left;
+	height:10px;
+	width:700px;
+	_width:699px;
+	background: url(../Images/fff-03.gif) no-repeat 0 0;
+	font-size:1px;
+}
+.fff_04_bla {float:right;height:10px;width:5px;background:url(../Images/fff-04.gif) no-repeat 0 0;font-size:1px;}
+.messagemodalbackground
+{
+    background-color:Gray;
+    filter:alpha(opacity=50);
+    opacity:0.6;
+    z-index:998;
+}
+.modalBackground
+{
+    background-color: Gray;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+.BGProcessing
+{
+    filter: alpha(opacity=50); opacity: 0.5;
+    background: Gray url(../Images/ajax-process.gif) no-repeat center 400px;
+    width: 100%;
+    display: none;
+    visibility: hidden;
+    position: fixed;
+    z-index: 99999;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+.p_mantenimiento
+{
+    font-family:Verdana, Geneva, sans-serif; 
+    /*font-size:16px;*/
+    font-weight:600;
+    }
+.fff_03_bla2 {
+	float:left;
+	height:10px;
+	width:661px;
+	background: url(../Images/fff-03.gif) no-repeat 0 0;
+	font-size:1px;
+}
+
+.ubi-main-popclave{
+	padding:12px;
+	float:left;
+}
+
+.close-popclave{
+    width:100%;
+	height:15px;
+	float:left;
+}
+.close-popclave77{
+	height:15px;
+	float:left;
+	width: 451px;
+}
+
+.ubi-close-popclave{
+	float:right;
+}
+
+.close-popclave a{
+	float: right;
+    background:url(../Images/ico-close-form-popclave.gif) no-repeat right center;
+    padding-right:20px;
+    text-decoration:none;
+}
+.close-popclave a 77{
+	background:url(../Images/ico-close-form-popclave.gif) no-repeat 38px 3px;
+	height:11px;
+	padding-right:20px;
+	text-decoration:none;
+}
+

@@ -7,40 +7,28 @@
             LimpiarCamposApp();
 
             document.getElementById('<%= Label1.ClientID%>').innerText = "Modificación de Aplicacion";
-        var array = obj.attr("datos").split("-");
+            var array = obj.attr("datos").split("-");
 
-        $("#Contenido_hidcuenta").val(array[0]);
-        $("#Contenido_txtnnombre").val(array[1]);
-        $("#Contenido_txtnusuario").val(array[2]);
-        $("#Contenido_txtnusuario").attr("readonly", "readonly");
-        $("#Contenido_txtnapepaterno").val(array[3]);
-        $("#Contenido_txtnapematerno").val(array[4]);
-        $("#Contenido_txtncorreo").val(array[5]);
-        $("#Contenido_hpass").val(array[7]);
-        $('#Contenido_chbnactivo').attr("checked", array[6] == "1" ? true : false);
+            $("#Contenido_hidapp").val(array[0]);
+            $("#Contenido_txtnombreapp").val(array[1]);
+            $("#Contenido_txtnombrecorto").val(array[2]);
+            $('#Contenido_chbactivo').attr("checked", array[3] == "1" ? true : false);
 
-        $("#Contenido_ibresetearclave").show();
+            $("#Contenido_ibresetearclave").show();
 
-        $find('bmpeRegistroCuenta').show();
+            $find('bmpeRegistroApp').show();
     }
     function LimpiarCamposApp() {
-        $("#Contenido_txtnusuario").val("");
-        $("#Contenido_txtnnombre").val("");
-        $("#Contenido_txtnapepaterno").val("");
-        $("#Contenido_txtnapematerno").val("");
-        $("#Contenido_txtncorreo").val("");
-        $("#Contenido_chbnactivo").attr("checked", false);
-        $("#Contenido_hidcuenta").val(null);
+        $("#Contenido_txtnombreapp").val("");
+        $("#Contenido_txtnombrecorto").val("");
+        $("#Contenido_chbactivo").attr("checked", false);
+        $("#Contenido_hidapp").val(null);
     }
 
     function regNuevaApp() {
-        LimpiarCamposCuenta();
-        document.getElementById('<%= Label1.ClientID%>').innerText = "Registro de Aplicacion";
-         $("#Contenido_txtnusuario").attr("readonly", "");
-         $("#Contenido_ibresetearclave").hide();
-         //$("#bmpeRegistroCuenta").show();
-
-         $find('bmperegistroaplicacion').show();
+        LimpiarCamposApp();
+        document.getElementById('<%= Label1.ClientID%>').innerText = "Registro de Aplicación";
+         $find('bmpeRegistroApp').show();
          return false;
      }
 
@@ -56,43 +44,20 @@
      //     }
 
      function ValidarAplicacion() {
-         if ($("#Contenido_txtnusuario").val() == "") {
-             alert('Ingrese un Usuario');
+         if ($("#Contenido_txtnombreapp").val() == "") {
+             alert('Ingrese un Nombre para la Aplicación');
              return false;
          }
-         if ($("#Contenido_txtnnombre").val() == "") {
-             alert('Ingrese un Nombre');
+         if ($("#Contenido_txtnombrecorto").val() == "") {
+             alert('Ingrese un Nombre Corto');
              return false;
-         }
-
-         if ($("#Contenido_txtnapepaterno").val() == "") {
-             alert('Ingrese un Apellido paterno');
-             return false;
-         }
-         if ($("#Contenido_txtnapematerno").val() == "") {
-             alert('Ingrese un Apellido materno');
-             return false;
-         }
-
-         var correo = $("#Contenido_txtncorreo").val();
-         var datos = correo.split('@');
-
-         if (correo == "") {
-             alert('Ingrese un correo');
-             return false;
-         }
-         else {
-             if (datos.length != 2) {
-                 alert('Ingrese un correo válido');
-                 return false;
-             }
          }
          return true;
      }
 </script>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<div>
+<asp:Content ID="Content2" ContentPlaceHolderID="Contenido" Runat="Server">
+    <div style="width:701px;">
         <div class="col_04">
         <h2 class="recibo_dig">
             Mantenimiento&nbsp;de&nbsp;Aplicaciones</h2>
@@ -101,18 +66,16 @@
          <%--<asp:Timer ID="tmVerCuenta" runat="server" Interval="100" Enabled="false" />--%>
          <table class="Tabla_filtro_txt" width="100%">
          <tr>
-         <td>
+         <td style="width:200px;text-align:left;">
          <p class="p_mantenimiento">Nombre&nbsp;Aplicación</p>
          </td>
-         <td>
+         <td style="width:200px;text-align:left;">
         <asp:TextBox ID="txtnombre" runat="server" class="celeste_cuadro6" MaxLength="20"></asp:TextBox>
          <asp:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server" Enabled="True"
         ValidChars="áéíóúÁÉÍÓÚ " FilterType="UppercaseLetters,LowerCaseLetters, Custom" TargetControlID="txtnombre" />
         <input id="hidlink" type="hidden" runat="server" />
          </td>
-
-         <td>
-         <p class="p_mantenimiento"></p>
+         <td>&nbsp;&nbsp;&nbsp;        
          </td>
          <td>
             <div class="separador" style="width: 100%;text-align:right">
@@ -150,9 +113,8 @@
                     <Columns>
                         <asp:TemplateField HeaderText="Editar" ItemStyle-Width="100px" >
                         <ItemTemplate>
-                            <asp:ImageButton runat="server"  ID="ibeditar" ImageUrl="~/Images/Button/ico_edit.png"
-                            dato='<%# Eval("id_aplicacion") + "-" + Eval("nombre_sistema") + "-" + Eval("nombre_corto") + "-" + 
-                            Eval("estado") %>' 
+                            <asp:ImageButton runat="server"  ID="ibeditar" ImageUrl="~/Images/Button/ico_edit.png" 
+                            datos='<%# Eval("id_aplicacion") + "-" + Eval("nombre_sistema") + "-" + Eval("nombre_corto") + "-" + Eval("estado") %>' 
                             OnClientClick="imgEdit_Click($(this)); return false;" />
                         </ItemTemplate>
                         </asp:TemplateField>
@@ -218,9 +180,9 @@
         <span style="float:left">Nombre&nbsp;Aplicacion</span><span style="color: Red;float: left;">(*)</span>
         </td>
         <td>
-        <asp:TextBox ID="txtnnombre" runat="server"  class="celeste_cuadro6" MaxLength="20"></asp:TextBox>
+        <asp:TextBox ID="txtnombreapp" runat="server"  class="celeste_cuadro6" MaxLength="20"></asp:TextBox>
         <asp:FilteredTextBoxExtender ID="ftennombre" runat="server" Enabled="True"
-        ValidChars="áéíóúÁÉÍÓÚ " FilterType="UppercaseLetters,LowerCaseLetters, Custom" TargetControlID="txtnnombre" />
+        ValidChars="áéíóúÁÉÍÓÚ " FilterType="UppercaseLetters,LowerCaseLetters, Custom" TargetControlID="txtnombreapp" />
         </td>
         </tr>
         <tr>
@@ -239,15 +201,14 @@
             </span>
         </td>
         <td>
-            <asp:CheckBox ID="chbnactivo" runat="server" />
-            <input id="hidcuenta" type="hidden" runat="server" />
-            <input id="hpass" type="hidden" runat="server" />
+            <asp:CheckBox ID="chbactivo" runat="server" />
+            <input id="hidapp" type="hidden" runat="server" />
         </td>
         </tr>
         <tr>
         <td></td>
         <td align="right">
-            <asp:Button ID="btnguardar" CssClass="ButtonSecundarioCampo100" Text="Guardar" runat="server" OnClick="btnBuscar_Click" />
+            <asp:Button ID="btnguardar" CssClass="ButtonSecundarioCampo100" Text="Guardar" runat="server" OnClick="btnguardar_Click" />
             <%--<asp:ImageButton ID="ibguardar" runat="server" 
                 ImageUrl="~/App_Themes/col01/img/bt_guardar2.gif" onclick="ibguardar_Click" OnClientClick="return ValidarCuenta();" />--%>
         </td>
@@ -265,7 +226,7 @@
     </asp:Panel>
 </div>
 <asp:Label ID="lblmensaje" runat="server" Text="A" Style="display: none;" />
-<asp:ModalPopupExtender ID="mpeRegistroApp" PopupControlID="pnregistroaplicacion" BehaviorID="bmperegistroaplicacion"  runat="server" TargetControlID="lblmensaje" BackgroundCssClass="modalBackground"  >
+<asp:ModalPopupExtender ID="mpeRegistroApp" PopupControlID="pnregistroaplicacion" BehaviorID="bmpeRegistroApp"  runat="server" TargetControlID="lblmensaje" BackgroundCssClass="modalBackground"  >
  </asp:ModalPopupExtender>
 </asp:Content>
 

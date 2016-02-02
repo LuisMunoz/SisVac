@@ -114,6 +114,7 @@ namespace Sodexo.DAL.SisVac.Data
             con.Open();
 
             SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = "sdv_del_aplicacion";
             try

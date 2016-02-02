@@ -5,6 +5,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Sodexo.Web.SisVac", "http:/
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = ""
 		Debug.AspNetCompiler.VirtualPath = "/localhost_4123"
 		Debug.AspNetCompiler.PhysicalPath = "Sodexo.Web.SisVac\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4123\"

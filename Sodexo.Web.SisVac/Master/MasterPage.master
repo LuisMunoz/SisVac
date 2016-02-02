@@ -10,151 +10,137 @@
     <link rel="stylesheet" href="../Css/Master.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="../Css/Pagina.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="../Css/Menu.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="../Css/DropDownList.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="../Css/TextBox.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="../Css/DatePicker.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="../Css/GridView.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="../Css/Button.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="../Css/Cargando.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="../Css/GroupBox.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="../Css/Styles.css" type="text/css" media="screen, projection" />
     <link rel="shortcut icon" href="../Images/favicon.ico" />
 
-    <script type="text/javascript" src="../Scripts/jquery-1.8.2.js"></script>
-    <script type="text/javascript" src="../Scripts/Utilitario.js"></script>
-    <script src="../shadowbox/shadowbox.js"></script>
-    <link href="../shadowbox/shadowbox.css" rel="stylesheet" />
-    <script>
-    	
-    </script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body onload="muestraReloj('lblHora')">
     <form id="form1" runat="server">
-        <center>
-                    <table class="TablaMaster" cellspacing="0" cellpadding="0">
+    <asp:ToolkitScriptManager runat="Server" EnablePartialRendering="true" ID="tsmBackOffice" LoadScriptsBeforeUI="true"
+        EnableScriptGlobalization="true" AsyncPostBackTimeout="600" AsyncPostBackErrorMessage="Ocurrió un error en el sistema, Vuelva a intentarlo mas tarde." 
+        EnableScriptLocalization="true" EnablePageMethods="true">
+        <Scripts>
+            <asp:ScriptReference Path="~/Scripts/jquery-1.8.2.js" />
+            <asp:ScriptReference Path="~/Scripts/Utilitario.js" />
+        </Scripts>
+    </asp:ToolkitScriptManager>
+    <div align="center">
+        <table class="TablaMaster" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+                    <table cellpadding="0" cellspacing="0" class="CabeceraMaster">
                         <tr>
-                            <td>
-                                <table cellpadding="0" cellspacing="0" class="CabeceraMaster">
+                            <td class="CabeceraMasterIzq"></td>
+                            <td class="Logo">
+                                <a id="lnkLinkLogo" runat="server"><img border="0" id="imgLogo" runat="server" alt="Logo Sodexo" src="~/Images/SodexoLogo.png" style="background-color:white;"  /></a>
+                            </td>
+                            <td class="Sesion">
+                                <table class="SesionTabla">
                                     <tr>
-                                        <td class="CabeceraMasterIzq"></td>
-                                        <td class="Logo">
-                                            <a id="lnkLinkLogo" runat="server"><img border="0" id="imgLogo" runat="server" alt="Logo Sodexo" src="~/Images/SodexoLogo.png" style="background-color:white;"  /></a>
-                                        </td>
-                                        <td class="Sesion">
-                                            <table class="SesionTabla">
-                                                <tr>
-                                                    <td >
-                                                        &nbsp;</td>
-                                                    <td class="SesionFechaHora" colspan="3">
-                                                        <asp:Label ID="lblFecha" runat="server" Text="Label" CssClass="SesionLabel"></asp:Label>
-                                                        <asp:Label ID="lblHora" runat="server" Text="Label" CssClass="SesionLabel"></asp:Label>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="SesionAplicacion">
-                                                        <asp:Label ID="lblNombreAplicacion" runat="server" Text="Label" Font-Bold="False"></asp:Label>
-                                                        <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="True" AsyncPostBackTimeout="600">
-                                                        </asp:ScriptManager>
-                                                    </td>
-                                                    <td>
-                                                        <asp:Button ID="btnInicio" runat="server" CssClass="SessionInicio" OnClick="btnInicio_Click"></asp:Button>
-                                                    </td>
-                                                    <td>
-                                                        <asp:Button ID="btnMiCuenta" runat="server" CssClass="SessionMiCuenta" OnClick="btnMiCuenta_Click"></asp:Button>
-                                                    </td>
-                                                    <td>
-                                                        <asp:Button ID="btnCerrarSesion" runat="server" CssClass="SessionCerrarSesion" OnClick="btnCerrarSesion_Click"></asp:Button>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td class="CabeceraMasterDer">
+                                        <td >
                                             &nbsp;</td>
+                                        <td class="SesionFechaHora" colspan="3">
+                                            <asp:Label ID="lblFecha" runat="server" Text="Label" CssClass="SesionLabel"></asp:Label>
+                                            <asp:Label ID="lblHora" runat="server" Text="Label" CssClass="SesionLabel"></asp:Label>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="4" class="MargenSuperior">&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td class="CabeceraMenu">
-                                            MENU</td>
-                                        <td class="CabeceraContenido">
-                                            <table cellpadding="0" cellspacing="0">
-                                                <tr>
-                                                    <td class="CabeceraContenidoTitulo">
-                                                        <asp:Label ID="lblTitulo" runat="server" Text="Label"></asp:Label>
-                                                    </td>
-                                                    <td class="CabeceraContenidoActual">
-                                                
-                                                    </td>
-                                                </tr>
-                                            </table>
+                                        <td class="SesionAplicacion">
+                                            <asp:Label ID="lblNombreAplicacion" runat="server" Text="Label" Font-Bold="False"></asp:Label>
+                                            <%--<asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="True" AsyncPostBackTimeout="600">
+                                            </asp:ScriptManager>--%>
                                         </td>
                                         <td>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td >&nbsp;</td>
-                                        <td class="ContenidoMenuPrincipal">
-                    <asp:Menu ID="mnuMenu" runat="server" Orientation="Vertical" SkipLinkText="">
-                <Items>
-                    <asp:MenuItem NavigateUrl="#" Text="Funcionario del Canal" Value="">
-                        <asp:MenuItem NavigateUrl="http:frmRegistrarSolicitud.aspx" Text="Registrar Solicitud" Value="frmRegistrarSolicitud"></asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="http:frmBandejaFunc.aspx" Text="Bandeja de Solicitudes Pendientes" Value="frmBandejaFunc"></asp:MenuItem>
-                    </asp:MenuItem>
-                    <asp:MenuItem NavigateUrl="#" Text="Aseguradora del Canal" Value="">
-                        <asp:MenuItem NavigateUrl="http:frmBandejaAseg.aspx" Text="Bandeja de Solicitudes Pendientes" Value="frmBandejaAseg"></asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="http:frmConsultarSolicitudAseg.aspx" Text="Consulta de Solicitudes" Value="frmConsultarSolicitudAseg"></asp:MenuItem>
-                    </asp:MenuItem>
-                    <asp:MenuItem NavigateUrl="#" Text="Siniestros Mapfre" Value="">
-                        <asp:MenuItem NavigateUrl="http:frmBandejaSiniMapfre.aspx" Text="Bandeja de Solicitudes Pendientes" Value="frmBandejaSiniMapfre"></asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="http:frmConsultarSolSiniMapfre.aspx" Text="Consulta de Solicitudes" Value="frmConsultarSolSiniMapfre"></asp:MenuItem>
-                    </asp:MenuItem>
-                    <asp:MenuItem NavigateUrl="#" Text="Suscriptor" Value="">
-                        <asp:MenuItem NavigateUrl="http:frmBandejaSusc.aspx" Text="Bandeja de Solicitudes" Value="frmBandejaSusc"></asp:MenuItem>
-                    </asp:MenuItem>
-                    <asp:MenuItem NavigateUrl="#" Text="Medico" Value="">
-                        <asp:MenuItem NavigateUrl="http:frmBandejaMedico.aspx" Text="Bandeja de Solicitudes" Value="frmBandejaMedico"></asp:MenuItem>
-                    </asp:MenuItem>
-                </Items>
-            </asp:Menu>
-                                        </td>
-                                        <td class="Contenido" rowspan="2">
-                                            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-                                                <ContentTemplate>
-                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                                                    </asp:ContentPlaceHolder>
-                                                </ContentTemplate>
-                                            </asp:UpdatePanel>
+                                            <asp:Button ID="btnInicio" runat="server" CssClass="SessionInicio" OnClick="btnInicio_Click"></asp:Button>
                                         </td>
                                         <td>
-                                            &nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                        <td >&nbsp;</td>
-                                        <td>
-                                            &nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="PieContenidoIzq">&nbsp;</td>
-                                        <td colspan="2" class="PieContenido">
-                                            <table cellspacing="0" cellpadding="0" class="PieContenidoTabla">
-                                                <tr>
-                                                    <td class="PieContenidoIzquierda">&copy; Copyright SODEXO PERÚ. Todos los Derechos Reservados</td>
-                                                </tr>
-                                            </table>
+                                            <asp:Button ID="btnMiCuenta" runat="server" CssClass="SessionMiCuenta" OnClick="btnMiCuenta_Click"></asp:Button>
                                         </td>
-                                        <td class="PieContenidoDer">
-                                            &nbsp;</td>
+                                        <td>
+                                            <asp:Button ID="btnCerrarSesion" runat="server" CssClass="SessionCerrarSesion" OnClick="btnCerrarSesion_Click"></asp:Button>
+                                        </td>
                                     </tr>
                                 </table>
-                        
+                            </td>
+                            <td class="CabeceraMasterDer">
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="MargenSuperior">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="CabeceraMenu">
+                                MENU</td>
+                            <td class="CabeceraContenido">
+                                <table cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="CabeceraContenidoTitulo">
+                                            <asp:Label ID="lblTitulo" runat="server" Text="Label"></asp:Label>
+                                        </td>
+                                        <td class="CabeceraContenidoActual">
+                                                
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
                             </td>
                         </tr>
+                        <tr>
+                            <td >&nbsp;</td>
+                            <td class="ContenidoMenuPrincipal">
+        <asp:Menu ID="mnuMenu" runat="server" Orientation="Vertical" SkipLinkText="">
+    <Items>
+        <asp:MenuItem NavigateUrl="#" Text="Mantenimiento" Value="">
+            <asp:MenuItem NavigateUrl="http:ManAplicacion.aspx" Text="Mantenimiento Aplicación" Value="ManAplicacion"></asp:MenuItem>
+            <asp:MenuItem NavigateUrl="http:ManUsuario.aspx" Text="Mantenimiento Usuario" Value="ManUsuario"></asp:MenuItem>
+        </asp:MenuItem>
+    </Items>
+</asp:Menu>
+                            </td>
+                            <td class="Contenido" rowspan="2">
+                                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                    <ContentTemplate>
+                                        <asp:ContentPlaceHolder ID="Contenido" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
+                            </td>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td >&nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="PieContenidoIzq">&nbsp;</td>
+                            <td colspan="2" class="PieContenido">
+                                <table cellspacing="0" cellpadding="0" class="PieContenidoTabla">
+                                    <tr>
+                                        <td class="PieContenidoIzquierda">&copy; Copyright SODEXO PERÚ. Todos los Derechos Reservados</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="PieContenidoDer">
+                                &nbsp;</td>
+                        </tr>
                     </table>
-        </center>
+                        
+                </td>
+            </tr>
+        </table>
+    </div>
     </form>
+    <div id="Processing" class="BGProcessing"></div>
 </body>
 </html>
