@@ -246,13 +246,13 @@
 
 /*Adicionales*/
 h2.ingreso { float:left; background:url(../Images/title_ingreso.gif) no-repeat 0 0; width:201px; height:61px;}
-.wrapper { float:left; width:1060px; padding:13px 20px; border-bottom: solid 1px #e3e3e3;}
+.wrapper { float:left; width:1060px; padding:13px 20px; border-bottom: solid 1px #ed1b2e;}
 .box { float:left; width:1100px; background:#fff;}
 .main { width:1100px; margin:0 auto;}
 .header { float:left; width:100%; height:78px; position:relative;}
 .wrapper2 { float:left; width:1070px; padding:13px 20px 45px; border-bottom: solid 1px #e3e3e3;}
 .width_total { width:100%;}
-.arri_azul2{width:1050px; height:23px; float:left; background:#0b81a5; color:#FFF; font-weight:600; padding: 6px 0 0 20px; font-size:13px; font-family:Verdana, Geneva, sans-serif;}
+.arri_azul2{width:1050px; height:23px; float:left; background:#ed1b2e; color:#FFF; font-weight:600; padding: 6px 0 0 20px; font-size:13px; font-family:Verdana, Geneva, sans-serif;}
 .txt_registro3{float:left; background:url(../Images/tele_chico2.jpg) no-repeat; width:460px; padding: 22px 0 0 240px; font-size:12px; color:#515559; text-align:justify;}
  .celestelogin2
 {
@@ -265,3 +265,48 @@ h2.ingreso { float:left; background:url(../Images/title_ingreso.gif) no-repeat 0
  }
  .col_03 { float:right; width:218px;}
  .box_nece { float:left; padding:37px 0 10px 0;}
+  .box_tit{ /*width:681px;*/
+	width:679px;
+	height:30px;
+	background:#ed1b2e;
+	font-size:13px;
+	font-weight:bold;
+	font-family:Verdana, Geneva, sans-serif;
+	padding:0 0 0 20px;
+	line-height:30px;
+	color:#FFF;
+	float:left
+}
+.cont_c02_detalle {	float:left;	width:699px;	_width:698px;	border:solid #d9dedf;	border-width:0 1px; background:url(../img/fon_gris.gif) repeat-x 0 0}
+.subtit_c44 { float:left; font-family:Verdana, Geneva, sans-serif; font-size:16px; color:#515559; font-weight:600; padding:13px 15px 0px 29px;}
+.parrafo_111{
+	float:left;
+	width:630px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#515559;
+	padding:10px 0px 10px 29px;
+	line-height:22px;
+}
+.box_c2 { float:left; padding:0 0 10px 0;}
+.main .box .wrapper2 .col_04 .box_c2 .cont_c02_bla.bg_gris .lugares_pagob .bg_f6f7f9 #azul {
+	color: #0086c3;
+}
+.main .box .wrapper2 .col_04 .box_c2 .cont_c02_bla.bg_gris .supp ul li div #selecto {
+	color: #515559;
+	text-align: right;
+}
+.f5f6f6_01 {float:left;	height:6px;	width:100%;	background:url(../Images/f5f6f6_01.gif) no-repeat 0 0;	font-size:1px;}
+.f5f6f6_02 { float:right; height:6px; width:6px; background:url(../Images/f5f6f6_02.gif) no-repeat 0 0; font-size:1px;}
+.col_04 {float:left;width:701px;padding:0 0 5px 20px;}
+.cont_c02_detalle {	float:left;	width:699px;	_width:698px;	border:solid #d9dedf;	border-width:0 1px; background:url(../img/fon_gris.gif) repeat-x 0 0}
+.col_04 .recibo_dig{background: url(../img/ico_pc.gif) left no-repeat;height:33px;font-size:25px;font-family:Verdana, Geneva, sans-serif;color:#515559;padding:7px 0 5px 50px;margin-bottom:13px;text-align:justify;} 
+.Espaciofiltro div.separador{width:50%; }
+.Espaciofiltro, .Espaciofiltro div{float:left; }
+.Espaciofiltro {
+    width: 100%;
+    background: #edf2f5;
+    margin: 10px 0 0 0;
+    padding: 10px 0 10px 00px;
+}
+.Tabla_filtro_txt{font-size:12px; font-weight:600; width:auto; float:left; margin: 0 0 0 20px; _margin: 0 0 0 10px;}

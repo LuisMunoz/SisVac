@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Sodexo.BL.SisVac;
+using Sodexo.BE.SisVac;
 
 namespace Sodexo.Wcf.SisVac
 {
     public class AplicacionService : IAplicacion
     {
 
-        public List<DAL.SisVac.Entity.Aplicacion> ListaAplicacion()
+        public List<AplicacionBE> ListaAplicacion()
         {
             try
             {
@@ -22,7 +23,7 @@ namespace Sodexo.Wcf.SisVac
             }
         }
 
-        public int RegistrarAplicacion(DAL.SisVac.Entity.Aplicacion app)
+        public int RegistrarAplicacion(AplicacionBE app)
         {
             try
             {
@@ -48,7 +49,7 @@ namespace Sodexo.Wcf.SisVac
             }
         }
 
-        public int ActualizarAplicacion(DAL.SisVac.Entity.Aplicacion app)
+        public int ActualizarAplicacion(AplicacionBE app)
         {
             try
             {

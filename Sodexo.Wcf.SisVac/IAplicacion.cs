@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.ServiceModel;
-using Sodexo.DAL.SisVac.Entity;
+using Sodexo.BE.SisVac;
 
 namespace Sodexo.Wcf.SisVac
 {
@@ -11,15 +11,15 @@ namespace Sodexo.Wcf.SisVac
     public interface IAplicacion
     {
         [OperationContract]
-        List<Aplicacion> ListaAplicacion();
+        List<AplicacionBE> ListaAplicacion();
 
         [OperationContract]
-        int RegistrarAplicacion(Aplicacion app);
+        int RegistrarAplicacion(AplicacionBE app);
 
         [OperationContract]
         int EliminarAplicacion(int app);
 
         [OperationContract]
-        int ActualizarAplicacion(Aplicacion app);
+        int ActualizarAplicacion(AplicacionBE app);
     }
 }

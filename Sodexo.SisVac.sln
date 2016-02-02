@@ -44,6 +44,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory.Shared.Library", "F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sodexo.Core.SisVac", "Sodexo.Core.SisVac\Sodexo.Core.SisVac.csproj", "{E85969B5-C843-4591-92C7-09DC4C09896A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sodexo.BE.SisVac", "Sodexo.BE.SisVac\Sodexo.BE.SisVac.csproj", "{8CF5A250-A977-4E7E-97D2-42C007EFA602}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{E85969B5-C843-4591-92C7-09DC4C09896A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E85969B5-C843-4591-92C7-09DC4C09896A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E85969B5-C843-4591-92C7-09DC4C09896A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CF5A250-A977-4E7E-97D2-42C007EFA602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CF5A250-A977-4E7E-97D2-42C007EFA602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CF5A250-A977-4E7E-97D2-42C007EFA602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CF5A250-A977-4E7E-97D2-42C007EFA602}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,5 +91,6 @@ Global
 		{1F744E5B-2EC7-4CBF-B20C-1B17DEB2C06F} = {AE626180-5BE2-4DB6-9F87-B2E73C28FEDA}
 		{E85969B5-C843-4591-92C7-09DC4C09896A} = {AE626180-5BE2-4DB6-9F87-B2E73C28FEDA}
 		{C6774DB6-1C71-47B3-9566-586421C3678D} = {21CA12E0-467E-43AF-88C0-02200D31CDC5}
+		{8CF5A250-A977-4E7E-97D2-42C007EFA602} = {21CA12E0-467E-43AF-88C0-02200D31CDC5}
 	EndGlobalSection
 EndGlobal

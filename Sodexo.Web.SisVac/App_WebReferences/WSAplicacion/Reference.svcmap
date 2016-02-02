@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="172c7fcd-6592-4e34-b2af-bf446fa1cbfc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ArrayList" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8732/Sodexo.Wcf.SisVac/AplicacionService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="c7937522-ab5e-48fa-8c67-8415f6e07671" SourceId="1" SourceUrl="http://localhost:8732/Sodexo.Wcf.SisVac/AplicacionService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="a2e89ce8-6860-4e42-a0f6-99d52785a2bd" SourceId="1" SourceUrl="http://localhost:8732/Sodexo.Wcf.SisVac/AplicacionService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="6b5fb876-c118-4d39-adc5-d94b1e03fb4f" SourceId="1" SourceUrl="http://localhost:8732/Sodexo.Wcf.SisVac/AplicacionService/mex" />
+    <MetadataFile FileName="Sodexo.BE.SisVac.xsd" MetadataType="Schema" ID="4f046a62-a701-4d2d-b430-6f78d60b56ff" SourceId="1" SourceUrl="http://localhost:8732/Sodexo.Wcf.SisVac/AplicacionService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

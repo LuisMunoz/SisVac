@@ -35,6 +35,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
@@ -47,73 +48,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\AplicacionDA.cs" />
-    <Compile Include="Entity\Aplicacion.cs">
-      <DependentUpon>SisVac.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entity\Excepcion.cs">
-      <DependentUpon>SisVac.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entity\Excepcion_det.cs">
-      <DependentUpon>SisVac.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entity\Parametros.cs">
-      <DependentUpon>SisVac.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entity\Perfil.cs">
-      <DependentUpon>SisVac.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entity\Rol.cs">
-      <DependentUpon>SisVac.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entity\SisVac.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SisVac.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entity\SisVac.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SisVac.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entity\SisVac.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SisVac.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Entity\Usuario.cs">
-      <DependentUpon>SisVac.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entity\Usuario_Rol.cs">
-      <DependentUpon>SisVac.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EntityDeploy Include="Entity\SisVac.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>SisVac.Designer.cs</LastGenOutput>
-    </EntityDeploy>
+    <ProjectReference Include="..\Sodexo.BE.SisVac\Sodexo.BE.SisVac.csproj">
+      <Project>{8cf5a250-a977-4e7e-97d2-42c007efa602}</Project>
+      <Name>Sodexo.BE.SisVac</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <None Include="Entity\SisVac.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SisVac.edmx</DependentUpon>
-      <LastGenOutput>SisVac.Context.cs</LastGenOutput>
-    </None>
-    <None Include="Entity\SisVac.edmx.diagram">
-      <DependentUpon>SisVac.edmx</DependentUpon>
-    </None>
-    <None Include="Entity\SisVac.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SisVac.edmx</DependentUpon>
-      <LastGenOutput>SisVac.cs</LastGenOutput>
-    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entity\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

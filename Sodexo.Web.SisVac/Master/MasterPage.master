@@ -134,11 +134,6 @@
                                     </tr>
                                     <tr>
                                         <td >&nbsp;</td>
-                                        <td class="ContenidoBannerPortal">
-                                            <img border="0" id="imgBanner" runat="server" alt="Banner Mapfre"/><br />
-                                            <br />
-                                            <img border="0" id="imgTelefono" runat="server" alt="Logo Teléfono"/>
-                                        </td>
                                         <td>
                                             &nbsp;</td>
                                     </tr>
