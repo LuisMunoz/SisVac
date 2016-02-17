@@ -312,10 +312,11 @@
 
 .PieContenidoIzquierda{
 	text-align:left;
-	color:#B7B9BC;
+	color:#ffffff;
 	font-family:Arial;
 	font-size:12px;
-    background-color:#585A5C;
+    /*background-color:#585A5C;*/
+    background-color:#262f7f;
     text-align:center;
     height:22px;
 }
